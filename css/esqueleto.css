@@ -1,0 +1,74 @@
+/* =====================================================
+   Esqueleto: solo estructura, colores y lorem ipsum.
+   Los bloques de color ocupan el lugar de las fotos.
+   ===================================================== */
+
+/* Portada sin foto: solo el degradado de la marca */
+.hero-image {
+  background-image: linear-gradient(135deg, #7a2cf0 0%, #ec1f8c 45%, #ff6b1a 80%, #ffd23f 100%);
+}
+
+/* Colores de la marca */
+.c-violeta { background-color: #7a2cf0; }
+.c-rosa { background-color: #ec1f8c; }
+.c-naranja { background-color: #ff6b1a; }
+.c-amarillo { background-color: #ffd23f; }
+.c-negro { background-color: #0e0d0c; }
+.c-papel { background-color: #f3efe6; }
+
+/* Bloques en lugar de fotos */
+.bloque {
+  height: 180px;
+  border: 2px solid #0e0d0c;
+}
+
+.bloque.ancha {
+  grid-column: span 2;
+}
+
+.galeria .bloque:nth-child(odd) {
+  opacity: 0.85;
+}
+
+/* Paleta del pie de página */
+.paleta {
+  display: flex;
+  gap: 8px;
+}
+
+.paleta span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.borde-claro {
+  border: 2px solid #f3efe6;
+}
+
+/* Textos grises */
+.gris {
+  color: #b9b3a7;
+}
+
+.gris-oscuro {
+  color: #6b655c;
+  font-size: 14px;
+}
+
+.linea-gris {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 40px 0;
+}
+
+ul.lista li {
+  padding: 18px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .bloque {
+    height: 130px;
+  }
+}

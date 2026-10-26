@@ -1,29 +1,30 @@
-# lhds-3 · La Hermana de Shakespeare (avance)
+# lhds-3 · La Hermana de Shakespeare (esqueleto)
 
-Avance del sitio: el mismo diseño de [lhds-2](https://github.com/uiuaaxyz/lhds-2), pero con las partes
-que todavía no están terminadas marcadas como **en construcción**. Sirve para presentar el proyecto
-como versión de avance.
+Esqueleto del sitio: la **estructura** de todas las secciones de la versión final ([lhds-2](https://github.com/uiuaaxyz/lhds-2)),
+con los **colores** y tipografías de la marca y texto **lorem ipsum** en lugar del contenido real.
+Las fotos están reemplazadas por bloques de color. Sirve para entregar como avance de cómo va a quedar.
 
 Para verlo, abre `index.html` en el navegador.
 
-## Qué ya está
-- Menú, portada con logo y manifiesto
-- Cartelera con filtros por disciplina
-- Convocatorias propias con bases en PDF y formulario de inscripción
-- Muro de recuerdos (primeras fotos)
-- Sobre nosotras: misión, visión, equipo y línea del tiempo
-- Archivo histórico de 2024
-- Pie de página con manifiesto y contacto
+## Estructura
+1. Menú con logo y botón destacado
+2. Portada (degradado de la marca, titular y dos botones)
+3. Cartelera con filtros por disciplina y tarjetas
+4. Convocatorias en dos pestañas (propias / externas)
+5. Puente con la revista (3 citas)
+6. Archivo: cifras y muro de fotos
+7. Sobre nosotras, equipo y línea del tiempo
+8. Prensa
+9. Pie de página con manifiesto y paleta de colores
 
-## Qué falta (marcado "en construcción" o "próximamente")
-- Registro a eventos
-- Red de convocatorias externas
-- Puente con la revista (nombre y enlace)
-- Resto de fotos del muro y archivo 2018–2023
-- Dirección y mapa de la sede Sinarte
-- Kit de prensa y boletín
-- Redes sociales
+Además: `archivo.html` (archivo por años) y `aviso-legal.html`.
 
-## Cómo pasar a la versión final
-Los avisos viven en `css/avance.css` y en los bloques `class="en-obra"` del HTML.
-Al terminar cada parte, se reemplaza el bloque por el contenido real (como en lhds-2) y al final se quita `css/avance.css`.
+## Paleta
+| Color | Hex |
+|---|---|
+| Violeta | `#7a2cf0` |
+| Rosa | `#ec1f8c` |
+| Naranja | `#ff6b1a` |
+| Amarillo | `#ffd23f` |
+| Papel | `#f3efe6` |
+| Negro | `#0e0d0c` |
