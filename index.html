@@ -8,22 +8,23 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/borrador.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Archivo+Black&family=Fraunces:ital@1&family=IBM+Plex+Mono:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/avance.css">
 </head>
 <body>
-<div class="sello-borrador">BORRADOR · v0.1 · no publicar</div>
+<div class="banner-avance">&#128679; Sitio en construcción · Avance del proyecto · Octubre 2026</div>
 
 <!-- Menú (W3Schools How To: Responsive Top Navigation) -->
 <div class="topnav" id="myTopnav">
   <div class="contenedor">
-    <a href="index.html" class="logo"><div class="logo-box nav">LOGO</div></a>
+    <a href="index.html" class="logo"><img src="img/logo-lhds-negro.png" alt="La Hermana de Shakespeare"></a>
     <div class="derecha">
       <a href="#cartelera">Cartelera</a>
       <a href="#convocatorias">Convocatorias</a>
       <a href="#nosotras">Sobre nosotras</a>
       <a href="#prensa">Prensa</a>
-      <a href="https://revista.example.com" target="_blank" title="Abre el sitio de la revista">&#9998; Revista [Nombre] &#8599;</a>
+      <a href="#revista" class="pendiente" title="Próximamente">&#9998; Revista <small>pronto</small></a>
       <a href="#convocatorias" class="cta degradado">Súmate al micrófono</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">&#9776; Menú</a>
@@ -33,8 +34,7 @@
 <!-- Portada (W3Schools How To: Hero Image) -->
 <div class="hero-image">
   <div class="contenedor">
-    <div class="logo-box grande">LOGO GÓTICO (blanco)<br><span>La Hermana de Shakespeare</span></div>
-    <div class="nota">Foto de fondo: micrófono abierto en B/N + degradado de la marca</div>
+    <img class="logo-grande" src="img/logo-lhds-blanco.png" alt="La Hermana de Shakespeare">
     <h1>Todo discurso es <span>importante y urgente.</span></h1>
     <p>Micrófonos abiertos, poesía, música, arte y trinchera independiente en Monterrey. Un espacio seguro para artistas emergentes desde 2018.</p>
     <a href="#cartelera" class="boton boton-claro">Ver la cartelera de este mes</a>
@@ -51,7 +51,6 @@
     <p class="etiqueta">Cartelera viva</p>
     <h2 class="titulo">Próximos <span class="gotica">eventos</span></h2>
     <p class="intro">Fechas, sedes y registro de lo que viene. Todas nuestras actividades son abiertas: sólo hace falta amor por el arte.</p>
-    <div class="nota">Los eventos son de EJEMPLO. Pedir fechas reales a logística</div>
     <div id="myBtnContainer" class="filtros">
       <button class="btn-filtro active" onclick="filterSelection('all')">Todo</button>
       <button class="btn-filtro" onclick="filterSelection('slam')">Slam de poesía</button>
@@ -70,7 +69,7 @@
             <p>Poesía, prosa y canción. Cinco minutos por participante.</p>
             <p><b>&#128205; <a href="https://maps.google.com/?q=Camaleónico+Café+Monterrey" target="_blank">Camaleónico Café · Monterrey</a></b></p>
             <p class="mes">Entrada $60</p>
-            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+            <span class="boton boton-chico desactivado">Registro próximamente</span>
           </div>
         </div>
       </div>
@@ -83,7 +82,7 @@
             <p>Sesión práctica para escribir desde la memoria personal. Trae libreta.</p>
             <p><b>&#128205; <a href="https://maps.google.com/?q=Sede+del+colectivo+Monterrey" target="_blank">Sede del colectivo · Monterrey</a></b></p>
             <p class="mes">Cupo limitado</p>
-            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+            <span class="boton boton-chico desactivado">Registro próximamente</span>
           </div>
         </div>
       </div>
@@ -96,7 +95,7 @@
             <p>Bandas locales, fanzines, ilustración y libros independientes.</p>
             <p><b>&#128205; <a href="https://maps.google.com/?q=Metapatio+Monterrey" target="_blank">Metapatio · Monterrey</a></b></p>
             <p class="mes">Preventa $100 · General $150</p>
-            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+            <span class="boton boton-chico desactivado">Registro próximamente</span>
           </div>
         </div>
       </div>
@@ -109,7 +108,7 @@
             <p>Tres rondas, jurado del público y premio para el primer lugar.</p>
             <p><b>&#128205; <a href="https://maps.google.com/?q=Otra+Barra+de+Café+Monterrey" target="_blank">Otra Barra de Café · Monterrey</a></b></p>
             <p class="mes">Entrada $60</p>
-            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+            <span class="boton boton-chico desactivado">Registro próximamente</span>
           </div>
         </div>
       </div>
@@ -122,7 +121,7 @@
             <p>Proyección y conversatorio abierto. Trae tu cojín.</p>
             <p><b>&#128205; <a href="https://maps.google.com/?q=Sede+del+colectivo+Monterrey" target="_blank">Sede del colectivo · Monterrey</a></b></p>
             <p class="mes">Entrada libre</p>
-            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+            <span class="boton boton-chico desactivado">Registro próximamente</span>
           </div>
         </div>
       </div>
@@ -135,7 +134,7 @@
             <p>Obra de artistas emergentes seleccionada por convocatoria.</p>
             <p><b>&#128205; <a href="https://maps.google.com/?q=Por+anunciar+Monterrey" target="_blank">Por anunciar · Monterrey</a></b></p>
             <p class="mes">Entrada libre</p>
-            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+            <span class="boton boton-chico desactivado">Registro próximamente</span>
           </div>
         </div>
       </div>
@@ -149,7 +148,6 @@
     <p class="etiqueta">Llamados abiertos</p>
     <h2 class="titulo gotica">Convocatorias</h2>
     <p class="intro">Nuestras propias convocatorias y un directorio curado de becas y fondos de la región para quienes van empezando.</p>
-    <div class="nota">2 pestañas: propias / externas. ¿Formulario con Google Forms?</div>
     <div class="tab">
       <button class="tablinks" onclick="openTab(event, 'propias')" id="defaultOpen">Convocatorias de La Hermana</button>
       <button class="tablinks" onclick="openTab(event, 'externas')">Red de convocatorias externas</button>
@@ -186,13 +184,11 @@
       </div>
     </div>
     <div id="externas" class="tabcontent">
-      <ul class="lista">
-        <li><a href="https://conarte.org.mx/" target="_blank"><span class="etiqueta org">CONARTE · Nuevo León</span><h3>Convocatorias del Consejo para la Cultura y las Artes de Nuevo León &#8599;</h3><span style="color:#cfc9bd">Becas, estímulos y premios estatales para creadores de todas las disciplinas.</span></a></li>
-        <li><a href="https://foncaenlinea.cultura.gob.mx/" target="_blank"><span class="etiqueta org">Secretaría de Cultura · SACPC</span><h3>Jóvenes Creadores y estímulos a la creación &#8599;</h3><span style="color:#cfc9bd">Programa federal de apoyos a la creación artística para personas de 18 a 34 años.</span></a></li>
-        <li><a href="https://conarte.org.mx/" target="_blank"><span class="etiqueta org">PECDA Nuevo León</span><h3>Programa de Estímulo a la Creación y al Desarrollo Artístico &#8599;</h3><span style="color:#cfc9bd">Estímulos para creadores con emisión anual en el estado.</span></a></li>
-        <li><a href="https://www.uanl.mx/" target="_blank"><span class="etiqueta org">UANL · Difusión cultural</span><h3>Convocatorias culturales de la UANL &#8599;</h3><span style="color:#cfc9bd">Premios literarios, ferias y espacios de exhibición abiertos a la comunidad.</span></a></li>
-      </ul>
-      <p class="etiqueta" style="color:#a8a297;margin-top:16px">Consulta siempre las bases en el sitio oficial de cada institución.</p>
+      <div class="en-obra obra-oscura">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Red de convocatorias externas</h3>
+      <p>Estamos armando el directorio de becas, fondos y convocatorias de la región. Muy pronto podrás consultarlo aquí.</p>
+    </div>
     </div>
   </div>
 </div>
@@ -203,36 +199,11 @@
   <div class="contenedor">
     <p class="etiqueta">El puente editorial · Lo último de la revista</p>
     <h2 class="titulo gotica">Revista [Nombre]</h2>
-    <div class="nota">FALTA: nombre y link de la revista</div>
     <p class="intro">Nuestro territorio editorial: creación literaria, reseñas y crítica.</p>
-    <div class="row">
-        <div class="column">
-          <div class="cita">
-            <p class="etiqueta">Poesía</p>
-            <blockquote>Nadie me dio permiso de hablar, así que tomé el micrófono como quien toma una piedra del río.</blockquote>
-            <h3>Piedra de río</h3>
-            <p style="color:#6b655c;font-size:14px">Nombre de la autora</p>
-            <a href="https://revista.example.com" target="_blank" class="boton boton-borde boton-chico">Leer en la Revista [Nombre] &#8599;</a>
-          </div>
-        </div>
-        <div class="column">
-          <div class="cita">
-            <p class="etiqueta">Ensayo</p>
-            <blockquote>La escena independiente de Monterrey no se mide en aforo, se mide en las sillas que alguien prestó.</blockquote>
-            <h3>Sillas prestadas: notas sobre la autogestión</h3>
-            <p style="color:#6b655c;font-size:14px">Nombre del autor</p>
-            <a href="https://revista.example.com" target="_blank" class="boton boton-borde boton-chico">Leer en la Revista [Nombre] &#8599;</a>
-          </div>
-        </div>
-        <div class="column">
-          <div class="cita">
-            <p class="etiqueta">Reseña</p>
-            <blockquote>Un libro que se lee como se escucha una tocada en un patio: de pie, apretada, con el corazón en la garganta.</blockquote>
-            <h3>Reseña: título del libro</h3>
-            <p style="color:#6b655c;font-size:14px">Nombre de quien reseña</p>
-            <a href="https://revista.example.com" target="_blank" class="boton boton-borde boton-chico">Leer en la Revista [Nombre] &#8599;</a>
-          </div>
-        </div>
+    <div class="en-obra">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Lo último de la revista</h3>
+      <p>Esta sección mostrará los textos más recientes de la revista literaria (poemas, ensayos y reseñas) en cuanto el sitio de la revista esté en línea.</p>
     </div>
   </div>
 </div>
@@ -248,22 +219,16 @@
       <div class="column"><b>11</b>Ediciones del festival</div>
       <div class="column"><b>18+</b>Sedes en el área metropolitana</div>
     </div>
-    <div class="nota">Muro de fotos en B/N, a color al pasar el mouse</div>
     <div class="galeria">
-      <div class="foto ancha"><b>FOTO</b><small>Micrófono abierto y Bazar de Arte · Casa Universitaria del Libro UANL · Julio 2023</small></div>
-      <div class="foto "><b>FOTO</b><small>Vol. IV · Ziggy Bar · Octubre 2019</small></div>
-      <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2024</small></div>
-      <div class="foto ancha"><b>FOTO</b><small>Séptima edición · Estudio Lizzard · Mayo 2022</small></div>
-      <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Casa Naranjos · Distrito Tec · Marzo 2020</small></div>
-      <div class="foto "><b>FOTO</b><small>ExpresArte Poesía · Facultad de Música UANL · Abril 2024</small></div>
-      <div class="foto ancha"><b>FOTO</b><small>Vol. I · Slam de poesía y prosa · Ámbar Galería Café · Mayo 2018</small></div>
-      <div class="foto "><b>FOTO</b><small>Décima edición · Vol. X · Taller Árido · Noviembre 2023</small></div>
-      <div class="foto "><b>FOTO</b><small>Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024</small></div>
-      <div class="foto ancha"><b>FOTO</b><small>Octava edición · Estudio Boox · Noviembre 2022</small></div>
-      <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024</small></div>
-      <div class="foto "><b>FOTO</b><small>Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024</small></div>
+      <img src="img/archivo/2023-07-casa-del-libro-05.jpg" alt="Micrófono abierto y Bazar de Arte · Casa Universitaria del Libro UANL · Julio 2023" onclick="verImagen(this)">
+      <img src="img/archivo/2019-10-ziggy-bar-02.jpg" alt="Vol. IV · Ziggy Bar · Octubre 2019" onclick="verImagen(this)">
+      <img src="img/archivo/2024-03-camaleonico-04.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" onclick="verImagen(this)">
+      <img src="img/archivo/2022-05-estudio-lizzard-02.jpg" alt="Séptima edición · Estudio Lizzard · Mayo 2022" onclick="verImagen(this)">
+      <img src="img/archivo/2020-03-casa-naranjos-03.jpg" alt="Micrófono abierto De Morra a Morra · Casa Naranjos · Distrito Tec · Marzo 2020" onclick="verImagen(this)">
+      <img src="img/archivo/2024-04-fac-musica-04.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" onclick="verImagen(this)">
+      <div class="foto-pendiente ancha">&#128679; Más fotos en camino</div>
     </div>
-    <p><a href="archivo.html" class="boton">Ver el archivo completo por años</a></p>
+    <p><a href="archivo.html" class="boton">Ver el archivo (avance)</a></p>
   </div>
 </div>
 
@@ -287,8 +252,7 @@
         <p><b>Ricardo Hernández</b><br><small>Asistente de logística</small></p>
         <p><b>Iris Martínez</b><br><small>Community manager</small></p>
         <p><b>Patricia Guevara</b><br><small>Asistente editorial</small></p>
-        <div class="nota">FALTA: dirección de Sinarte + mapa</div>
-        <div class="caja oscura"><h3>Sede: Sinarte</h3>Dirección y horarios por confirmar.</div>
+        <div class="caja oscura"><h3>Sede: Sinarte</h3>Dirección, horarios y mapa: próximamente.</div>
       </div>
     </div>
     <h3 class="etiqueta" style="margin-top:30px">Línea del tiempo</h3>
@@ -309,25 +273,10 @@
   <div class="contenedor">
     <p class="etiqueta">Prensa</p>
     <h2 class="titulo">Kit de <span class="gotica">prensa</span></h2>
-    <div class="row">
-      <div class="column col-50">
-        <div class="caja">
-          <h3>Para medios</h3>
-          <p>Portafolio 2024 con trayectoria, línea del tiempo, logotipos y fotografías.</p>
-          <div class="nota">Subir el kit de prensa en PDF</div>
-          <a href="#" class="boton">&#11015; Descargar kit de prensa</a>
-        </div>
-      </div>
-      <div class="column col-50">
-        <div class="caja">
-          <h3>Boletín</h3>
-          <p>Recibe la cartelera del mes y las convocatorias abiertas en tu correo.</p>
-          <form onsubmit="event.preventDefault(); this.innerHTML='<b>¡Gracias! Te escribiremos pronto.</b>';">
-            <input type="email" placeholder="tu@correo.com" required>
-            <button type="submit" class="boton">Suscribirme</button>
-          </form>
-        </div>
-      </div>
+    <div class="en-obra">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Kit de prensa y boletín</h3>
+      <p>Aquí podrás descargar el kit de prensa con logotipos, fotografías y trayectoria del colectivo, y suscribirte al boletín mensual.</p>
     </div>
   </div>
 </div>
@@ -371,12 +320,9 @@
     <hr style="border-color:#333;margin:40px 0">
     <div class="row">
       <div class="column">
-        <div class="logo-box chico">LOGO (blanco)</div>
+        <img src="img/logo-lhds-blanco.png" alt="La Hermana de Shakespeare" style="width:220px">
         <p style="color:#b9b3a7">Colectivo independiente para artistas emergentes del Área Metropolitana de Monterrey.</p>
-        <!-- [POR CONFIRMAR] enlaces de redes sociales -->
-        <a class="boton boton-borde boton-chico" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a class="boton boton-borde boton-chico" href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <a class="boton boton-borde boton-chico" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <p class="etiqueta" style="color:#ffd23f">Redes sociales: próximamente</p>
       </div>
       <div class="column">
         <h4>Explora</h4>
@@ -384,7 +330,7 @@
           <li><a href="index.html#cartelera">Cartelera</a></li>
           <li><a href="index.html#convocatorias">Convocatorias</a></li>
           <li><a href="archivo.html">Archivo histórico</a></li>
-          <li><a href="https://revista.example.com" target="_blank">Revista [Nombre] &#8599;</a></li>
+          <li class="pendiente-texto">Revista (próximamente)</li>
         </ul>
       </div>
       <div class="column">
@@ -392,7 +338,7 @@
         <ul>
           <!-- [POR CONFIRMAR] correo del colectivo -->
           <li><a href="mailto:contacto@lahermanadeshakespeare.mx">contacto@lahermanadeshakespeare.mx</a></li>
-          <li><a href="#">Kit de prensa (PDF)</a></li>
+          <li class="pendiente-texto">Kit de prensa (próximamente)</li>
           <li><a href="aviso-legal.html">Aviso legal y privacidad</a></li>
           <li>Monterrey, Nuevo León</li>
         </ul>
@@ -402,6 +348,12 @@
   </div>
 </footer>
 
+<!-- Ventana para ver fotos (W3Schools How To: Modal Images) -->
+<div id="imgModal" class="modal" onclick="cerrarModal('imgModal')">
+  <span class="close">&times;</span>
+  <img id="imgGrande" alt="">
+  <div id="caption" class="caption"></div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

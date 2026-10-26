@@ -8,22 +8,23 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/borrador.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Archivo+Black&family=Fraunces:ital@1&family=IBM+Plex+Mono:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/avance.css">
 </head>
 <body>
-<div class="sello-borrador">BORRADOR · v0.1 · no publicar</div>
+<div class="banner-avance">&#128679; Sitio en construcción · Avance del proyecto · Octubre 2026</div>
 
 <!-- Menú (W3Schools How To: Responsive Top Navigation) -->
 <div class="topnav" id="myTopnav">
   <div class="contenedor">
-    <a href="index.html" class="logo"><div class="logo-box nav">LOGO</div></a>
+    <a href="index.html" class="logo"><img src="img/logo-lhds-negro.png" alt="La Hermana de Shakespeare"></a>
     <div class="derecha">
       <a href="index.html#cartelera">Cartelera</a>
       <a href="index.html#convocatorias">Convocatorias</a>
       <a href="index.html#nosotras">Sobre nosotras</a>
       <a href="index.html#prensa">Prensa</a>
-      <a href="https://revista.example.com" target="_blank" title="Abre el sitio de la revista">&#9998; Revista [Nombre] &#8599;</a>
+      <a href="index.html#revista" class="pendiente" title="Próximamente">&#9998; Revista <small>pronto</small></a>
       <a href="index.html#convocatorias" class="cta degradado">Súmate al micrófono</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">&#9776; Menú</a>
@@ -54,12 +55,9 @@
     <hr style="border-color:#333;margin:40px 0">
     <div class="row">
       <div class="column">
-        <div class="logo-box chico">LOGO (blanco)</div>
+        <img src="img/logo-lhds-blanco.png" alt="La Hermana de Shakespeare" style="width:220px">
         <p style="color:#b9b3a7">Colectivo independiente para artistas emergentes del Área Metropolitana de Monterrey.</p>
-        <!-- [POR CONFIRMAR] enlaces de redes sociales -->
-        <a class="boton boton-borde boton-chico" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a class="boton boton-borde boton-chico" href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <a class="boton boton-borde boton-chico" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <p class="etiqueta" style="color:#ffd23f">Redes sociales: próximamente</p>
       </div>
       <div class="column">
         <h4>Explora</h4>
@@ -67,7 +65,7 @@
           <li><a href="index.html#cartelera">Cartelera</a></li>
           <li><a href="index.html#convocatorias">Convocatorias</a></li>
           <li><a href="archivo.html">Archivo histórico</a></li>
-          <li><a href="https://revista.example.com" target="_blank">Revista [Nombre] &#8599;</a></li>
+          <li class="pendiente-texto">Revista (próximamente)</li>
         </ul>
       </div>
       <div class="column">
@@ -75,7 +73,7 @@
         <ul>
           <!-- [POR CONFIRMAR] correo del colectivo -->
           <li><a href="mailto:contacto@lahermanadeshakespeare.mx">contacto@lahermanadeshakespeare.mx</a></li>
-          <li><a href="#">Kit de prensa (PDF)</a></li>
+          <li class="pendiente-texto">Kit de prensa (próximamente)</li>
           <li><a href="aviso-legal.html">Aviso legal y privacidad</a></li>
           <li>Monterrey, Nuevo León</li>
         </ul>
@@ -85,6 +83,12 @@
   </div>
 </footer>
 
+<!-- Ventana para ver fotos (W3Schools How To: Modal Images) -->
+<div id="imgModal" class="modal" onclick="cerrarModal('imgModal')">
+  <span class="close">&times;</span>
+  <img id="imgGrande" alt="">
+  <div id="caption" class="caption"></div>
+</div>
 
 <script src="js/script.js"></script>
 </body>

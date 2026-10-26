@@ -1,7 +1,5 @@
 /* =====================================================
-   La Hermana de Shakespeare - estilos (VERSIÓN BORRADOR)
-   Misma estructura que lhds-2; al final del archivo está
-   la capa de "boceto" que lo hace ver como borrador.
+   La Hermana de Shakespeare - estilos
    Basado en ejemplos de W3Schools (CSS Tutorial y "How To").
    Cada bloque dice de qué ejemplo viene.
    ===================================================== */
@@ -13,11 +11,11 @@
 
 body {
   margin: 0;
-  font-family: "Patrick Hand", "Comic Sans MS", cursive;
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.5;
-  background-color: #fbfaf7;
-  color: #333;
+  background-color: #f3efe6;
+  color: #0e0d0c;
 }
 
 img {
@@ -39,23 +37,23 @@ a {
 }
 
 .oscura {
-  background-color: #333;
-  color: #fbfaf7;
+  background-color: #0e0d0c;
+  color: #f3efe6;
 }
 
 .beige {
-  background-color: #f0efeb;
+  background-color: #e8e2d5;
 }
 
 /* Tipografías */
 .gotica {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "UnifrakturMaguntia", serif;
   font-weight: normal;
   text-transform: none;
 }
 
 .etiqueta {
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -63,7 +61,7 @@ a {
 }
 
 h2.titulo {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 60px;
   line-height: 1;
   text-transform: uppercase;
@@ -78,11 +76,11 @@ h2.titulo {
 
 /* Degradado de la marca (W3Schools: CSS Gradients) */
 .degradado {
-  background-image: repeating-linear-gradient(45deg, #ddd 0 6px, #f4f4f4 6px 12px);
+  background-image: linear-gradient(to right, #7a2cf0, #ec1f8c, #ff6b1a, #ffd23f);
 }
 
 .texto-degradado {
-  background-image: repeating-linear-gradient(45deg, #ddd 0 6px, #f4f4f4 6px 12px);
+  background-image: linear-gradient(to right, #7a2cf0, #ec1f8c, #ff6b1a, #ffd23f);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -91,11 +89,11 @@ h2.titulo {
 /* ---------- Botones (W3Schools: CSS Buttons) ---------- */
 .boton {
   display: inline-block;
-  background-color: #333;
-  color: #fbfaf7;
-  border: 2px solid #333;
+  background-color: #0e0d0c;
+  color: #f3efe6;
+  border: 2px solid #0e0d0c;
   padding: 14px 22px;
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -105,15 +103,15 @@ h2.titulo {
 }
 
 .boton:hover {
-  background-color: #999;
-  border-color: #999;
+  background-color: #ec1f8c;
+  border-color: #ec1f8c;
   color: white;
 }
 
 .boton-claro {
-  background-color: #fbfaf7;
-  color: #333;
-  border-color: #fbfaf7;
+  background-color: #f3efe6;
+  color: #0e0d0c;
+  border-color: #f3efe6;
 }
 
 .boton-borde {
@@ -132,8 +130,8 @@ h2.titulo {
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: #fbfaf7;
-  border-bottom: 2px solid #333;
+  background-color: #f3efe6;
+  border-bottom: 2px solid #0e0d0c;
   overflow: hidden;
 }
 
@@ -147,8 +145,8 @@ h2.titulo {
 }
 
 .topnav a:hover {
-  background-color: #333;
-  color: #fbfaf7;
+  background-color: #0e0d0c;
+  color: #f3efe6;
 }
 
 .topnav a.logo {
@@ -171,10 +169,10 @@ h2.titulo {
 .topnav a.cta {
   margin: 12px 0 12px 10px;
   padding: 12px 16px;
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 13px;
   text-transform: uppercase;
-  border: 2px solid #333;
+  border: 2px solid #0e0d0c;
 }
 
 .topnav a.icon {
@@ -226,7 +224,7 @@ h2.titulo {
 }
 
 .hero-image h1 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 50px;
   line-height: 1.05;
   text-transform: uppercase;
@@ -235,8 +233,8 @@ h2.titulo {
 }
 
 .hero-image h1 span {
-  background-color: #ddd;
-  color: #333;
+  background-color: #ffd23f;
+  color: #0e0d0c;
   padding: 0 6px;
 }
 
@@ -247,12 +245,12 @@ h2.titulo {
 
 /* Cinta en movimiento (W3Schools: CSS Animations) */
 .cinta {
-  background-color: #ddd;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+  background-color: #ffd23f;
+  border-top: 2px solid #0e0d0c;
+  border-bottom: 2px solid #0e0d0c;
   overflow: hidden;
   white-space: nowrap;
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   padding: 12px 0;
@@ -275,11 +273,11 @@ h2.titulo {
 }
 
 .btn-filtro {
-  border: 2px solid #333;
+  border: 2px solid #0e0d0c;
   background-color: transparent;
   padding: 8px 14px;
   margin: 0 4px 8px 0;
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 13px;
   text-transform: uppercase;
   cursor: pointer;
@@ -287,8 +285,8 @@ h2.titulo {
 
 .btn-filtro:hover,
 .btn-filtro.active {
-  background-color: #333;
-  color: #fbfaf7;
+  background-color: #0e0d0c;
+  color: #f3efe6;
 }
 
 .filterDiv {
@@ -314,27 +312,27 @@ h2.titulo {
 
 .card {
   background-color: white;
-  border: 2px solid #333;
+  border: 2px solid #0e0d0c;
   height: 100%;
 }
 
 .card:hover {
-  box-shadow: 6px 6px 0 #333;
+  box-shadow: 6px 6px 0 #0e0d0c;
 }
 
 .card .fecha {
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #0e0d0c;
   padding: 14px 18px;
 }
 
 .card .dia {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 46px;
   line-height: 1;
 }
 
 .card .mes {
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -344,7 +342,7 @@ h2.titulo {
 }
 
 .card h3 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 1.1;
@@ -360,18 +358,18 @@ h2.titulo {
 .label {
   display: inline-block;
   padding: 3px 8px;
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 11px;
   font-weight: bold;
   text-transform: uppercase;
-  border: 1px solid #333;
+  border: 1px solid #0e0d0c;
 }
 
-.label.slam { background-color: #999; color: white; }
-.label.musica { background-color: #ddd; }
-.label.taller { background-color: #777; color: white; }
-.label.cine { background-color: #333; color: white; }
-.label.expo { background-color: #bbb; }
+.label.slam { background-color: #ec1f8c; color: white; }
+.label.musica { background-color: #ffd23f; }
+.label.taller { background-color: #7a2cf0; color: white; }
+.label.cine { background-color: #0e0d0c; color: white; }
+.label.expo { background-color: #ff6b1a; }
 
 @media screen and (max-width: 900px) {
   .column {
@@ -397,18 +395,18 @@ h2.titulo {
 /* ---------- Pestañas (W3Schools How To: Tabs) ---------- */
 .tab {
   overflow: hidden;
-  border-bottom: 2px solid #fbfaf7;
+  border-bottom: 2px solid #f3efe6;
 }
 
 .tab button {
   float: left;
   background-color: inherit;
-  color: #fbfaf7;
-  border: 2px solid #fbfaf7;
+  color: #f3efe6;
+  border: 2px solid #f3efe6;
   border-bottom: none;
   margin-right: 6px;
   padding: 14px 18px;
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
@@ -416,8 +414,8 @@ h2.titulo {
 
 .tab button:hover,
 .tab button.active {
-  background-color: #fbfaf7;
-  color: #333;
+  background-color: #f3efe6;
+  color: #0e0d0c;
 }
 
 .tabcontent {
@@ -426,22 +424,22 @@ h2.titulo {
 }
 
 .convocatoria {
-  background-color: #fbfaf7;
-  color: #333;
-  border-top: 6px solid #999;
+  background-color: #f3efe6;
+  color: #0e0d0c;
+  border-top: 6px solid #ec1f8c;
   padding: 20px;
   height: 100%;
 }
 
 .convocatoria h3 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 22px;
   margin: 8px 0;
 }
 
 .abierta {
-  color: #555;
+  color: #0a7a33;
   font-weight: bold;
 }
 
@@ -462,18 +460,18 @@ ul.lista li a {
 }
 
 ul.lista li a:hover h3 {
-  color: #ddd;
+  color: #ffd23f;
 }
 
 ul.lista h3 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   margin: 4px 0;
 }
 
 ul.lista .org {
-  color: #ddd;
+  color: #ffd23f;
 }
 
 /* ---------- Ventana modal (W3Schools How To: Modal) ---------- */
@@ -491,13 +489,13 @@ ul.lista .org {
 }
 
 .modal-content {
-  background-color: #fbfaf7;
+  background-color: #f3efe6;
   margin: auto;
   padding: 24px;
-  border: 2px solid #333;
+  border: 2px solid #0e0d0c;
   width: 90%;
   max-width: 540px;
-  box-shadow: 8px 8px 0 #999;
+  box-shadow: 8px 8px 0 #ec1f8c;
 }
 
 .close {
@@ -509,7 +507,7 @@ ul.lista .org {
 }
 
 .close:hover {
-  color: #999;
+  color: #ec1f8c;
 }
 
 /* Formulario (W3Schools How To: Contact Form) */
@@ -519,7 +517,7 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 2px solid #333;
+  border: 2px solid #0e0d0c;
   margin: 6px 0 14px 0;
   font-size: 16px;
   font-family: inherit;
@@ -527,7 +525,7 @@ textarea {
 }
 
 label {
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -535,13 +533,13 @@ label {
 /* ---------- Revista (W3Schools How To: Blockquote / Testimonials) ---------- */
 .cita {
   background-color: white;
-  border: 2px solid #333;
+  border: 2px solid #0e0d0c;
   padding: 24px;
   height: 100%;
 }
 
 .cita blockquote {
-  font-family: "Patrick Hand", "Comic Sans MS", cursive;
+  font-family: "Fraunces", Georgia, serif;
   font-style: italic;
   font-size: 22px;
   margin: 12px 0 18px 0;
@@ -553,11 +551,11 @@ label {
   line-height: 0.1;
   vertical-align: -0.4em;
   margin-right: 4px;
-  color: #999;
+  color: #ec1f8c;
 }
 
 .cita h3 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 17px;
   margin: 0;
@@ -606,7 +604,7 @@ label {
 #imgModal .caption {
   color: white;
   padding: 12px;
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
 }
 
 #imgModal .close {
@@ -619,43 +617,43 @@ label {
 
 /* Cifras */
 .cifras .column {
-  border-left: 2px solid #333;
+  border-left: 2px solid #0e0d0c;
 }
 
 .cifras b {
   display: block;
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 48px;
 }
 
 /* ---------- Sobre nosotras ---------- */
 .caja {
-  border: 2px solid #333;
+  border: 2px solid #0e0d0c;
   background-color: white;
   padding: 20px;
   margin-bottom: 16px;
 }
 
 .caja h3 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   text-transform: uppercase;
   margin: 0 0 8px 0;
 }
 
 .equipo p {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #c9c1b2;
   padding-bottom: 10px;
 }
 
 .equipo small {
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   text-transform: uppercase;
-  color: #777;
+  color: #6b655c;
 }
 
 /* Línea del tiempo (W3Schools How To: Timeline, versión simple) */
 .linea {
-  border-left: 4px solid #999;
+  border-left: 4px solid #ec1f8c;
   padding-left: 20px;
 }
 
@@ -664,20 +662,20 @@ label {
 }
 
 .linea b {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 20px;
   margin-right: 8px;
 }
 
 /* ---------- Pie de página ---------- */
 .footer {
-  background-color: #333;
-  color: #fbfaf7;
+  background-color: #0e0d0c;
+  color: #f3efe6;
   padding: 60px 0 90px 0;
 }
 
 .footer .manifiesto {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 44px;
   line-height: 1.05;
   text-transform: uppercase;
@@ -686,8 +684,8 @@ label {
 }
 
 .footer h4 {
-  color: #ddd;
-  font-family: "Courier New", monospace;
+  color: #ffd23f;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -706,7 +704,7 @@ label {
 }
 
 .footer a:hover {
-  color: #ddd;
+  color: #ffd23f;
 }
 
 @media screen and (max-width: 600px) {
@@ -722,15 +720,15 @@ label {
   bottom: 20px;
   right: 20px;
   z-index: 15;
-  border: 2px solid #333;
-  color: #333;
+  border: 2px solid #0e0d0c;
+  color: #0e0d0c;
   padding: 14px 18px;
-  font-family: "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-weight: bold;
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 4px 4px 0 #333;
+  box-shadow: 4px 4px 0 #0e0d0c;
 }
 
 /* ---------- Página del archivo ---------- */
@@ -738,8 +736,8 @@ label {
   position: sticky;
   top: 72px;
   z-index: 5;
-  background-color: #fbfaf7;
-  border-bottom: 2px solid #333;
+  background-color: #f3efe6;
+  border-bottom: 2px solid #0e0d0c;
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -747,31 +745,31 @@ label {
 .anios a {
   display: inline-block;
   padding: 12px 18px;
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 20px;
   text-decoration: none;
-  border-right: 2px solid #333;
+  border-right: 2px solid #0e0d0c;
 }
 
 .anios a:hover {
-  background-color: #333;
-  color: #fbfaf7;
+  background-color: #0e0d0c;
+  color: #f3efe6;
 }
 
 .anio {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   font-size: 110px;
   line-height: 1;
   margin: 50px 0 10px 0;
 }
 
 .evento-archivo {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #c9c1b2;
   padding: 24px 0;
 }
 
 .evento-archivo h3 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "Archivo Black", Arial, sans-serif;
   text-transform: uppercase;
   margin: 4px 0;
 }
@@ -815,15 +813,15 @@ label {
 /* Títulos en letra gótica */
 .titulo.gotica,
 h2.titulo.gotica {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-family: "UnifrakturMaguntia", serif;
   font-weight: normal;
   text-transform: none;
   font-size: 72px;
 }
 
 .caja.oscura {
-  background-color: #333;
-  color: #fbfaf7;
+  background-color: #0e0d0c;
+  color: #f3efe6;
 }
 
 @media screen and (max-width: 600px) {
@@ -832,335 +830,3 @@ h2.titulo.gotica {
     font-size: 52px;
   }
 }
-
-
-/* =====================================================
-   CAPA DE BORRADOR (boceto / wireframe)
-   ===================================================== */
-
-/* Papel cuadriculado (W3Schools: CSS Multiple Backgrounds) */
-body {
-  background-color: #fbfaf7;
-  background-image:
-    linear-gradient(#e6eef5 1px, transparent 1px),
-    linear-gradient(90deg, #e6eef5 1px, transparent 1px);
-  background-size: 24px 24px;
-  color: #333;
-  font-size: 19px;
-}
-
-.oscura,
-.beige,
-.footer {
-  background-color: rgba(240, 240, 236, 0.85);
-  color: #333;
-  border-top: 2px dashed #999;
-}
-
-.footer .manifiesto,
-.footer h4,
-ul.lista .org,
-.hero-image,
-.hero-image h1,
-.tab button {
-  color: #333;
-}
-
-.texto-degradado {
-  background-image: none;
-  color: #333;
-  text-decoration: underline wavy #999;
-}
-
-/* Bordes "dibujados a mano" (W3Schools: CSS Rounded Corners) */
-.card,
-.caja,
-.cita,
-.convocatoria,
-.boton,
-.btn-filtro,
-.tab button,
-.modal-content,
-input[type=text],
-input[type=email],
-select,
-textarea,
-.label,
-.foto,
-.logo-box {
-  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
-}
-
-.card,
-.caja,
-.cita,
-.convocatoria {
-  border: 2px solid #555;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: none;
-}
-
-.card:hover {
-  box-shadow: 3px 3px 0 #bbb;
-}
-
-.convocatoria {
-  border-top: 2px solid #555;
-}
-
-.caja.oscura {
-  background-color: #eee;
-  color: #333;
-  border-style: dashed;
-}
-
-.boton,
-.boton:hover,
-.btn-filtro.active,
-.btn-filtro:hover,
-.tab button.active,
-.tab button:hover {
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #555;
-}
-
-.boton:hover,
-.btn-filtro:hover {
-  background-color: #eee;
-}
-
-.btn-filtro.active,
-.tab button.active {
-  background-color: #ddd;
-}
-
-.boton-claro,
-.boton-borde {
-  background-color: transparent;
-}
-
-.label,
-.label.slam,
-.label.musica,
-.label.taller,
-.label.cine,
-.label.expo {
-  background-color: #fff;
-  color: #333;
-  border: 1.5px dashed #555;
-}
-
-h2.titulo,
-.titulo.gotica,
-h2.titulo.gotica {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
-  text-transform: none;
-  font-weight: normal;
-}
-
-.gotica {
-  font-family: "Caveat", cursive;
-  font-size: 1.15em;
-}
-
-/* Portada */
-.hero-image {
-  background-image: none;
-  background-color: transparent;
-  border-bottom: 2px dashed #999;
-}
-
-.hero-image h1 {
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
-  text-transform: none;
-}
-
-.hero-image h1 span {
-  background-color: transparent;
-  color: #333;
-  box-shadow: inset 0 -0.35em 0 #e5e5e5;
-}
-
-.hero-image p,
-.hero-image .etiqueta {
-  color: #555 !important;
-}
-
-.cinta {
-  background-color: #f2f2f2;
-  border-style: dashed;
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
-}
-
-.cinta span {
-  animation: none;
-  padding-left: 16px;
-}
-
-.topnav {
-  background-color: #fbfaf7;
-  border-bottom: 2px dashed #555;
-}
-
-.topnav a:hover {
-  background-color: #eee;
-  color: #333;
-}
-
-.topnav a.cta {
-  border-style: dashed;
-}
-
-/* Cajas de foto vacías (wireframe) */
-.foto {
-  position: relative;
-  border: 2px solid #999;
-  background:
-    linear-gradient(to top right, transparent calc(50% - 1px), #bbb, transparent calc(50% + 1px)),
-    linear-gradient(to top left, transparent calc(50% - 1px), #bbb, transparent calc(50% + 1px)),
-    #f4f4f2;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-}
-
-.foto b {
-  background-color: #f4f4f2;
-  padding: 2px 8px;
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
-}
-
-.foto small {
-  background-color: #f4f4f2;
-  padding: 2px 6px;
-  margin-top: 6px;
-  font-size: 13px;
-  color: #666;
-}
-
-.foto.ancha {
-  grid-column: span 2;
-}
-
-.foto.mas {
-  background: #fff;
-  border-style: dashed;
-}
-
-/* Logo provisional */
-.logo-box {
-  border: 2px dashed #555;
-  font-family: "Architects Daughter", "Comic Sans MS", cursive;
-  text-align: center;
-  color: #555;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.logo-box.nav {
-  width: 120px;
-  height: 48px;
-  line-height: 44px;
-}
-
-.logo-box.grande {
-  width: 520px;
-  max-width: 100%;
-  padding: 40px 10px;
-  font-size: 26px;
-  margin-bottom: 24px;
-}
-
-.logo-box.grande span {
-  font-family: "Caveat", cursive;
-  font-size: 38px;
-}
-
-.logo-box.chico {
-  width: 220px;
-  padding: 26px 10px;
-  margin-bottom: 10px;
-}
-
-/* Notas al margen (W3Schools How To: Notes / Callout) */
-.nota {
-  display: inline-block;
-  font-family: "Caveat", cursive;
-  font-size: 22px;
-  color: #c0392b;
-  background-color: #fff8b3;
-  padding: 4px 12px;
-  margin: 0 0 14px 0;
-  transform: rotate(-1.5deg);
-  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.12);
-}
-
-.nota:before {
-  content: "\270E  ";
-}
-
-/* Sello de borrador */
-.sello-borrador {
-  background-color: #fff8b3;
-  color: #c0392b;
-  text-align: center;
-  font-family: "Courier New", monospace;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  padding: 6px;
-  border-bottom: 2px dashed #c0392b;
-}
-
-#botonFlotante {
-  background: #fff;
-  border-style: dashed;
-  box-shadow: 3px 3px 0 #bbb;
-}
-
-.anio {
-  color: #333;
-}
-
-.anios {
-  background-color: #fbfaf7;
-}
-
-.linea {
-  border-left: 3px dashed #999;
-}
-
-ul.lista li {
-  border-bottom: 1px dashed #999;
-}
-
-ul.lista li a span {
-  color: #555 !important;
-}
-
-.footer p,
-.footer .about {
-  color: #555 !important;
-}
-
-.cifras .column {
-  border-left: 2px dashed #999;
-}
-
-hr {
-  border: 0;
-  border-top: 2px dashed #999 !important;
-}
-
-@media screen and (max-width: 700px) {
-  .foto {
-    height: 140px;
-  }
-}
-
-.tabcontent .etiqueta { color: #777 !important; }

@@ -8,22 +8,23 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/borrador.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Archivo+Black&family=Fraunces:ital@1&family=IBM+Plex+Mono:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/avance.css">
 </head>
 <body>
-<div class="sello-borrador">BORRADOR · v0.1 · no publicar</div>
+<div class="banner-avance">&#128679; Sitio en construcción · Avance del proyecto · Octubre 2026</div>
 
 <!-- Menú (W3Schools How To: Responsive Top Navigation) -->
 <div class="topnav" id="myTopnav">
   <div class="contenedor">
-    <a href="index.html" class="logo"><div class="logo-box nav">LOGO</div></a>
+    <a href="index.html" class="logo"><img src="img/logo-lhds-negro.png" alt="La Hermana de Shakespeare"></a>
     <div class="derecha">
       <a href="index.html#cartelera">Cartelera</a>
       <a href="index.html#convocatorias">Convocatorias</a>
       <a href="index.html#nosotras">Sobre nosotras</a>
       <a href="index.html#prensa">Prensa</a>
-      <a href="https://revista.example.com" target="_blank" title="Abre el sitio de la revista">&#9998; Revista [Nombre] &#8599;</a>
+      <a href="index.html#revista" class="pendiente" title="Próximamente">&#9998; Revista <small>pronto</small></a>
       <a href="index.html#convocatorias" class="cta degradado">Súmate al micrófono</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">&#9776; Menú</a>
@@ -34,10 +35,9 @@
   <div class="contenedor">
     <p class="etiqueta">Memoria del colectivo · 2018 — hoy</p>
     <h1 class="titulo gotica">El Archivo</h1>
-    <p class="intro">Carteles y fotografías de todas nuestras ediciones, ordenados por año. (En el borrador solo se muestran cajas; la versión final lleva las fotos reales.)</p>
+    <p class="intro">Carteles y fotografías de todas nuestras ediciones, ordenados por año. Por ahora está completo 2024; los demás años se están digitalizando.</p>
   </div>
 </div>
-<div class="nota">Nota: cada año lleva su menú pegado arriba. Aquí van TODAS las fotos del portafolio.</div>
 <div class="anios"><a href="#y2024">2024</a><a href="#y2023">2023</a><a href="#y2022">2022</a><a href="#y2020">2020</a><a href="#y2019">2019</a><a href="#y2018">2018</a></div>
 
   <div id="y2024" class="contenedor">
@@ -47,11 +47,14 @@
       <h3>Décima primera edición · Vol. XI</h3>
       <p>Once ediciones: micrófono abierto, bazar y música de No hay niños en el parque.</p>
       <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Décima primera edición · Vol. XI · Metapatio · Junio 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Décima primera edición · Vol. XI · Metapatio · Junio 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Décima primera edición · Vol. XI · Metapatio · Junio 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Décima primera edición · Vol. XI · Metapatio · Junio 2024</small></div>
-        <div class="foto mas"><b>+4</b><small>fotos más</small></div>
+        <img src="img/archivo/2024-06-metapatio-cartel.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-06-metapatio-01.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-06-metapatio-02.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-06-metapatio-03.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-06-metapatio-04.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-06-metapatio-05.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-06-metapatio-06.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-06-metapatio-07.jpg" alt="Décima primera edición · Vol. XI · Metapatio · Junio 2024" loading="lazy" onclick="verImagen(this)">
       </div>
     </div>
     <div class="evento-archivo">
@@ -59,11 +62,13 @@
       <h3>Slam poetry × exposición de arte</h3>
       <p>Slam de poesía y exposición de arte con música de Turnipz.</p>
       <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
+        <img src="img/archivo/2024-05-otra-barra-cartel.jpg" alt="Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-05-otra-barra-01.jpg" alt="Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-05-otra-barra-02.jpg" alt="Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-05-otra-barra-03.jpg" alt="Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-05-otra-barra-04.jpg" alt="Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-05-otra-barra-05.jpg" alt="Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-05-otra-barra-06.jpg" alt="Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024" loading="lazy" onclick="verImagen(this)">
       </div>
     </div>
     <div class="evento-archivo">
@@ -71,11 +76,13 @@
       <h3>ExpresArte Poesía</h3>
       <p>Micrófono abierto “ExpresArte” en el auditorio de la Facultad de Música.</p>
       <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>ExpresArte Poesía · Facultad de Música UANL · Abril 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>ExpresArte Poesía · Facultad de Música UANL · Abril 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>ExpresArte Poesía · Facultad de Música UANL · Abril 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>ExpresArte Poesía · Facultad de Música UANL · Abril 2024</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
+        <img src="img/archivo/2024-04-fac-musica-cartel.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-04-fac-musica-01.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-04-fac-musica-02.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-04-fac-musica-03.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-04-fac-musica-04.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-04-fac-musica-05.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-04-fac-musica-06.jpg" alt="ExpresArte Poesía · Facultad de Música UANL · Abril 2024" loading="lazy" onclick="verImagen(this)">
       </div>
     </div>
     <div class="evento-archivo">
@@ -83,11 +90,14 @@
       <h3>Noche de Poesía Juvenil</h3>
       <p>Micrófono abierto en colaboración con el Gobierno de Escobedo.</p>
       <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024</small></div>
-        <div class="foto mas"><b>+4</b><small>fotos más</small></div>
+        <img src="img/archivo/2024-03-cerradas-anahuac-cartel.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-cerradas-anahuac-01.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-cerradas-anahuac-02.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-cerradas-anahuac-03.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-cerradas-anahuac-04.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-cerradas-anahuac-05.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-cerradas-anahuac-06.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-cerradas-anahuac-07.jpg" alt="Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024" loading="lazy" onclick="verImagen(this)">
       </div>
     </div>
     <div class="evento-archivo">
@@ -95,11 +105,13 @@
       <h3>Micrófono abierto</h3>
       <p>Micrófono abierto con música de Cielo Padilla y Sam Vázquez.</p>
       <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Micrófono abierto · Camaleónico Café · Marzo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2024</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
+        <img src="img/archivo/2024-03-camaleonico-cartel.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-camaleonico-01.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-camaleonico-02.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-camaleonico-03.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-camaleonico-04.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-camaleonico-05.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-03-camaleonico-06.jpg" alt="Micrófono abierto · Camaleónico Café · Marzo 2024" loading="lazy" onclick="verImagen(this)">
       </div>
     </div>
     <div class="evento-archivo">
@@ -107,215 +119,54 @@
       <h3>Micrófono abierto De Morra a Morra</h3>
       <p>Micrófono abierto con música de Kapiolani.</p>
       <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
+        <img src="img/archivo/2024-02-cataluna-cartel.jpg" alt="Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-02-cataluna-01.jpg" alt="Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-02-cataluna-02.jpg" alt="Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-02-cataluna-03.jpg" alt="Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-02-cataluna-04.jpg" alt="Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-02-cataluna-05.jpg" alt="Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024" loading="lazy" onclick="verImagen(this)">
+        <img src="img/archivo/2024-02-cataluna-06.jpg" alt="Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024" loading="lazy" onclick="verImagen(this)">
       </div>
     </div>
   </div>
   <div id="y2023" class="contenedor">
     <h2 class="anio texto-degradado">2023</h2>
-    <div class="evento-archivo">
-      <p class="etiqueta">Noviembre 2023 · Taller Árido</p>
-      <h3>Décima edición · Vol. X</h3>
-      <p>Diez ediciones: Mis Ojos Tristes, Sultans, Plástica, Pink N Punk, La Juventud Latinoamericana, Flores en Júpiter y Princesa Shoegazing Experience.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Décima edición · Vol. X · Taller Árido · Noviembre 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Décima edición · Vol. X · Taller Árido · Noviembre 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Décima edición · Vol. X · Taller Árido · Noviembre 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Décima edición · Vol. X · Taller Árido · Noviembre 2023</small></div>
-        <div class="foto mas"><b>+4</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Octubre 2023 · Astromelia Coffee &amp; Bakery</p>
-      <h3>Micrófono abierto</h3>
-      <p>Micrófono abierto con música de Michelle Motel y Guti Cámara.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Micrófono abierto · Astromelia Coffee &amp; Bakery · Octubre 2023</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Julio 2023 · Montés Bar</p>
-      <h3>Slam poetry, bandas y bazar</h3>
-      <p>Slam poetry, bandas invitadas, micrófono abierto y bazar de arte.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Slam poetry, bandas y bazar · Montés Bar · Julio 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Slam poetry, bandas y bazar · Montés Bar · Julio 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Slam poetry, bandas y bazar · Montés Bar · Julio 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Slam poetry, bandas y bazar · Montés Bar · Julio 2023</small></div>
-        <div class="foto mas"><b>+4</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Julio 2023 · Casa Universitaria del Libro UANL</p>
-      <h3>Micrófono abierto y Bazar de Arte</h3>
-      <p>Dos días de micrófono abierto y bazar de arte con entrada libre.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Micrófono abierto y Bazar de Arte · Casa Universitaria del Libro UANL · Julio 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto y Bazar de Arte · Casa Universitaria del Libro UANL · Julio 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto y Bazar de Arte · Casa Universitaria del Libro UANL · Julio 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto y Bazar de Arte · Casa Universitaria del Libro UANL · Julio 2023</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Marzo 2023 · Camaleónico Café</p>
-      <h3>Micrófono abierto</h3>
-      <p>Micrófono abierto con música de Daniela Rubio.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Micrófono abierto · Camaleónico Café · Marzo 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2023</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Febrero 2023 · Ámbar Galería Café</p>
-      <h3>Micrófono abierto De Morra a Morra</h3>
-      <p>De vuelta a la casa donde nació el colectivo.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Micrófono abierto De Morra a Morra · Ámbar Galería Café · Febrero 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Ámbar Galería Café · Febrero 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Ámbar Galería Café · Febrero 2023</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Ámbar Galería Café · Febrero 2023</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
+    <div class="en-obra">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Archivo 2023</h3>
+      <p>Estamos digitalizando los carteles y fotografías de este año.</p>
     </div>
   </div>
   <div id="y2022" class="contenedor">
     <h2 class="anio texto-degradado">2022</h2>
-    <div class="evento-archivo">
-      <p class="etiqueta">Noviembre 2022 · Estudio Boox</p>
-      <h3>Octava edición</h3>
-      <p>Micrófono abierto y bandas en vivo.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Octava edición · Estudio Boox · Noviembre 2022</small></div>
-        <div class="foto "><b>FOTO</b><small>Octava edición · Estudio Boox · Noviembre 2022</small></div>
-        <div class="foto "><b>FOTO</b><small>Octava edición · Estudio Boox · Noviembre 2022</small></div>
-        <div class="foto "><b>FOTO</b><small>Octava edición · Estudio Boox · Noviembre 2022</small></div>
-        <div class="foto mas"><b>+4</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Mayo 2022 · Estudio Lizzard</p>
-      <h3>Séptima edición</h3>
-      <p>El regreso presencial: micrófono abierto con Pitz Palu, Estalactitas y Acidez de Marcela.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Séptima edición · Estudio Lizzard · Mayo 2022</small></div>
-        <div class="foto "><b>FOTO</b><small>Séptima edición · Estudio Lizzard · Mayo 2022</small></div>
-        <div class="foto "><b>FOTO</b><small>Séptima edición · Estudio Lizzard · Mayo 2022</small></div>
-        <div class="foto "><b>FOTO</b><small>Séptima edición · Estudio Lizzard · Mayo 2022</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
+    <div class="en-obra">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Archivo 2022</h3>
+      <p>Estamos digitalizando los carteles y fotografías de este año.</p>
     </div>
   </div>
   <div id="y2020" class="contenedor">
     <h2 class="anio texto-degradado">2020</h2>
-    <div class="evento-archivo">
-      <p class="etiqueta">Julio 2020 · Mayo 2021 · En línea</p>
-      <h3>Vol. V y VI · Ediciones en línea</h3>
-      <p>La “Quarantine edition” y la sexta edición se transmitieron en vivo: slam poetry y actos musicales desde casa.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Vol. V y VI · Ediciones en línea · En línea · Julio 2020 · Mayo 2021</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. V y VI · Ediciones en línea · En línea · Julio 2020 · Mayo 2021</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. V y VI · Ediciones en línea · En línea · Julio 2020 · Mayo 2021</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. V y VI · Ediciones en línea · En línea · Julio 2020 · Mayo 2021</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Marzo 2020 · Casa Naranjos · Distrito Tec</p>
-      <h3>Micrófono abierto De Morra a Morra</h3>
-      <p>Micrófono abierto De Morra a Morra, días antes del confinamiento.</p>
-      <div class="galeria">
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Casa Naranjos · Distrito Tec · Marzo 2020</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Casa Naranjos · Distrito Tec · Marzo 2020</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Casa Naranjos · Distrito Tec · Marzo 2020</small></div>
-        <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Casa Naranjos · Distrito Tec · Marzo 2020</small></div>
-        <div class="foto mas"><b>+2</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Febrero 2020 · Tecnológico de Monterrey</p>
-      <h3>Segundo taller De Morra a Morra</h3>
-      <p>Taller de escritura para mujeres en colaboración con el Tec de Monterrey.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Segundo taller De Morra a Morra · Tecnológico de Monterrey · Febrero 2020</small></div>
-        <div class="foto "><b>FOTO</b><small>Segundo taller De Morra a Morra · Tecnológico de Monterrey · Febrero 2020</small></div>
-        <div class="foto "><b>FOTO</b><small>Segundo taller De Morra a Morra · Tecnológico de Monterrey · Febrero 2020</small></div>
-        <div class="foto "><b>FOTO</b><small>Segundo taller De Morra a Morra · Tecnológico de Monterrey · Febrero 2020</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
+    <div class="en-obra">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Archivo 2020</h3>
+      <p>Estamos digitalizando los carteles y fotografías de este año.</p>
     </div>
   </div>
   <div id="y2019" class="contenedor">
     <h2 class="anio texto-degradado">2019</h2>
-    <div class="evento-archivo">
-      <p class="etiqueta">Octubre 2019 · Ziggy Bar</p>
-      <h3>Vol. IV</h3>
-      <p>Cuarta edición con bandas, performances, micrófono abierto, mercado de arte, fanzines, lectura de tarot, drag show e intercambio de libros.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Vol. IV · Ziggy Bar · Octubre 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. IV · Ziggy Bar · Octubre 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. IV · Ziggy Bar · Octubre 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. IV · Ziggy Bar · Octubre 2019</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Mayo 2019 · Casa Naranjos · Distrito Tec</p>
-      <h3>Vol. III</h3>
-      <p>Tercera edición: slam, lectura de prosa, música en vivo y exposición de arte y fotografía.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Vol. III · Casa Naranjos · Distrito Tec · Mayo 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. III · Casa Naranjos · Distrito Tec · Mayo 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. III · Casa Naranjos · Distrito Tec · Mayo 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. III · Casa Naranjos · Distrito Tec · Mayo 2019</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Febrero 2019 · Casa Aomori</p>
-      <h3>Primer taller De Morra a Morra</h3>
-      <p>Primer taller de escritura para mujeres De Morra a Morra.</p>
-      <div class="galeria">
-        <div class="foto "><b>FOTO</b><small>Primer taller De Morra a Morra · Casa Aomori · Febrero 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Primer taller De Morra a Morra · Casa Aomori · Febrero 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Primer taller De Morra a Morra · Casa Aomori · Febrero 2019</small></div>
-        <div class="foto "><b>FOTO</b><small>Primer taller De Morra a Morra · Casa Aomori · Febrero 2019</small></div>
-        <div class="foto mas"><b>+2</b><small>fotos más</small></div>
-      </div>
+    <div class="en-obra">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Archivo 2019</h3>
+      <p>Estamos digitalizando los carteles y fotografías de este año.</p>
     </div>
   </div>
   <div id="y2018" class="contenedor">
     <h2 class="anio texto-degradado">2018</h2>
-    <div class="evento-archivo">
-      <p class="etiqueta">Octubre 2018 · Ámbar Galería Café</p>
-      <h3>Vol. II · Slam de poesía y exposición</h3>
-      <p>Segunda edición: lectura de prosa, slam de poesía y exposición de arte y fotografía.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Vol. II · Slam de poesía y exposición · Ámbar Galería Café · Octubre 2018</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. II · Slam de poesía y exposición · Ámbar Galería Café · Octubre 2018</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. II · Slam de poesía y exposición · Ámbar Galería Café · Octubre 2018</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. II · Slam de poesía y exposición · Ámbar Galería Café · Octubre 2018</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
-    </div>
-    <div class="evento-archivo">
-      <p class="etiqueta">Mayo 2018 · Ámbar Galería Café</p>
-      <h3>Vol. I · Slam de poesía y prosa</h3>
-      <p>La primera edición: slam de poesía y prosa con exposición de arte y fotografía. Aquí empezó todo.</p>
-      <div class="galeria">
-        <div class="foto "><b>CARTEL</b><small>Vol. I · Slam de poesía y prosa · Ámbar Galería Café · Mayo 2018</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. I · Slam de poesía y prosa · Ámbar Galería Café · Mayo 2018</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. I · Slam de poesía y prosa · Ámbar Galería Café · Mayo 2018</small></div>
-        <div class="foto "><b>FOTO</b><small>Vol. I · Slam de poesía y prosa · Ámbar Galería Café · Mayo 2018</small></div>
-        <div class="foto mas"><b>+3</b><small>fotos más</small></div>
-      </div>
+    <div class="en-obra">
+      <p class="etiqueta">&#128679; En construcción</p>
+      <h3>Archivo 2018</h3>
+      <p>Estamos digitalizando los carteles y fotografías de este año.</p>
     </div>
   </div>
 <div style="height:60px"></div>
@@ -329,12 +180,9 @@
     <hr style="border-color:#333;margin:40px 0">
     <div class="row">
       <div class="column">
-        <div class="logo-box chico">LOGO (blanco)</div>
+        <img src="img/logo-lhds-blanco.png" alt="La Hermana de Shakespeare" style="width:220px">
         <p style="color:#b9b3a7">Colectivo independiente para artistas emergentes del Área Metropolitana de Monterrey.</p>
-        <!-- [POR CONFIRMAR] enlaces de redes sociales -->
-        <a class="boton boton-borde boton-chico" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a class="boton boton-borde boton-chico" href="https://www.tiktok.com/" target="_blank">TikTok</a>
-        <a class="boton boton-borde boton-chico" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <p class="etiqueta" style="color:#ffd23f">Redes sociales: próximamente</p>
       </div>
       <div class="column">
         <h4>Explora</h4>
@@ -342,7 +190,7 @@
           <li><a href="index.html#cartelera">Cartelera</a></li>
           <li><a href="index.html#convocatorias">Convocatorias</a></li>
           <li><a href="archivo.html">Archivo histórico</a></li>
-          <li><a href="https://revista.example.com" target="_blank">Revista [Nombre] &#8599;</a></li>
+          <li class="pendiente-texto">Revista (próximamente)</li>
         </ul>
       </div>
       <div class="column">
@@ -350,7 +198,7 @@
         <ul>
           <!-- [POR CONFIRMAR] correo del colectivo -->
           <li><a href="mailto:contacto@lahermanadeshakespeare.mx">contacto@lahermanadeshakespeare.mx</a></li>
-          <li><a href="#">Kit de prensa (PDF)</a></li>
+          <li class="pendiente-texto">Kit de prensa (próximamente)</li>
           <li><a href="aviso-legal.html">Aviso legal y privacidad</a></li>
           <li>Monterrey, Nuevo León</li>
         </ul>
@@ -360,6 +208,12 @@
   </div>
 </footer>
 
+<!-- Ventana para ver fotos (W3Schools How To: Modal Images) -->
+<div id="imgModal" class="modal" onclick="cerrarModal('imgModal')">
+  <span class="close">&times;</span>
+  <img id="imgGrande" alt="">
+  <div id="caption" class="caption"></div>
+</div>
 
 <script src="js/script.js"></script>
 </body>
