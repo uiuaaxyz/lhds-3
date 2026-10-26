@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Hermana de Shakespeare · Colectivo independiente en Monterrey</title>
+<meta name="description" content="Colectivo independiente que impulsa a artistas emergentes del Área Metropolitana de Monterrey desde 2018.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/borrador.css">
+</head>
+<body>
+<div class="sello-borrador">BORRADOR · v0.1 · no publicar</div>
+
+<!-- Menú (W3Schools How To: Responsive Top Navigation) -->
+<div class="topnav" id="myTopnav">
+  <div class="contenedor">
+    <a href="index.html" class="logo"><div class="logo-box nav">LOGO</div></a>
+    <div class="derecha">
+      <a href="#cartelera">Cartelera</a>
+      <a href="#convocatorias">Convocatorias</a>
+      <a href="#nosotras">Sobre nosotras</a>
+      <a href="#prensa">Prensa</a>
+      <a href="https://revista.example.com" target="_blank" title="Abre el sitio de la revista">&#9998; Revista [Nombre] &#8599;</a>
+      <a href="#convocatorias" class="cta degradado">Súmate al micrófono</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="abrirMenu()">&#9776; Menú</a>
+  </div>
+</div>
+
+<!-- Portada (W3Schools How To: Hero Image) -->
+<div class="hero-image">
+  <div class="contenedor">
+    <div class="logo-box grande">LOGO GÓTICO (blanco)<br><span>La Hermana de Shakespeare</span></div>
+    <div class="nota">Foto de fondo: micrófono abierto en B/N + degradado de la marca</div>
+    <h1>Todo discurso es <span>importante y urgente.</span></h1>
+    <p>Micrófonos abiertos, poesía, música, arte y trinchera independiente en Monterrey. Un espacio seguro para artistas emergentes desde 2018.</p>
+    <a href="#cartelera" class="boton boton-claro">Ver la cartelera de este mes</a>
+    <a href="#convocatorias" class="boton boton-borde">Conoce nuestras convocatorias</a>
+    <p class="etiqueta" style="margin-top:28px;color:#ffd23f">Próximo evento: 14 nov · Micrófono abierto De Morra a Morra · Camaleónico Café</p>
+  </div>
+</div>
+<div class="cinta"><span>Micrófono abierto ✶ Slam de poesía ✶ Bazar de arte ✶ Tocadas ✶ Talleres De Morra a Morra ✶ Exposiciones ✶ Fanzines ✶</span></div>
+
+<!-- Cartelera (W3Schools How To: Filter Elements + Column Cards) -->
+<!-- [EJEMPLO] Cambiar por los eventos reales -->
+<div class="seccion" id="cartelera">
+  <div class="contenedor">
+    <p class="etiqueta">Cartelera viva</p>
+    <h2 class="titulo">Próximos <span class="gotica">eventos</span></h2>
+    <p class="intro">Fechas, sedes y registro de lo que viene. Todas nuestras actividades son abiertas: sólo hace falta amor por el arte.</p>
+    <div class="nota">Los eventos son de EJEMPLO. Pedir fechas reales a logística</div>
+    <div id="myBtnContainer" class="filtros">
+      <button class="btn-filtro active" onclick="filterSelection('all')">Todo</button>
+      <button class="btn-filtro" onclick="filterSelection('slam')">Slam de poesía</button>
+      <button class="btn-filtro" onclick="filterSelection('musica')">Música</button>
+      <button class="btn-filtro" onclick="filterSelection('taller')">Taller</button>
+      <button class="btn-filtro" onclick="filterSelection('cine')">Cine</button>
+      <button class="btn-filtro" onclick="filterSelection('expo')">Exposición</button>
+    </div>
+    <div class="row">
+      <div class="column filterDiv slam">
+        <div class="card">
+          <div class="fecha"><span class="dia">14</span> <span class="mes">nov 2026</span><br><span class="mes">Sábado · 6:00 p.m.</span></div>
+          <div class="info">
+            <span class="label slam">Slam de poesía</span>
+            <h3>Micrófono abierto De Morra a Morra</h3>
+            <p>Poesía, prosa y canción. Cinco minutos por participante.</p>
+            <p><b>&#128205; <a href="https://maps.google.com/?q=Camaleónico+Café+Monterrey" target="_blank">Camaleónico Café · Monterrey</a></b></p>
+            <p class="mes">Entrada $60</p>
+            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+          </div>
+        </div>
+      </div>
+      <div class="column filterDiv taller">
+        <div class="card">
+          <div class="fecha"><span class="dia">22</span> <span class="mes">nov 2026</span><br><span class="mes">Domingo · 5:00 p.m.</span></div>
+          <div class="info">
+            <span class="label taller">Taller</span>
+            <h3>Taller de escritura: el cuerpo como archivo</h3>
+            <p>Sesión práctica para escribir desde la memoria personal. Trae libreta.</p>
+            <p><b>&#128205; <a href="https://maps.google.com/?q=Sede+del+colectivo+Monterrey" target="_blank">Sede del colectivo · Monterrey</a></b></p>
+            <p class="mes">Cupo limitado</p>
+            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+          </div>
+        </div>
+      </div>
+      <div class="column filterDiv musica">
+        <div class="card">
+          <div class="fecha"><span class="dia">29</span> <span class="mes">nov 2026</span><br><span class="mes">Domingo · 7:00 p.m.</span></div>
+          <div class="info">
+            <span class="label musica">Música</span>
+            <h3>Tocada + bazar de arte</h3>
+            <p>Bandas locales, fanzines, ilustración y libros independientes.</p>
+            <p><b>&#128205; <a href="https://maps.google.com/?q=Metapatio+Monterrey" target="_blank">Metapatio · Monterrey</a></b></p>
+            <p class="mes">Preventa $100 · General $150</p>
+            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+          </div>
+        </div>
+      </div>
+      <div class="column filterDiv slam">
+        <div class="card">
+          <div class="fecha"><span class="dia">6</span> <span class="mes">dic 2026</span><br><span class="mes">Domingo · 6:30 p.m.</span></div>
+          <div class="info">
+            <span class="label slam">Slam de poesía</span>
+            <h3>Slam de poesía: torneo de fin de año</h3>
+            <p>Tres rondas, jurado del público y premio para el primer lugar.</p>
+            <p><b>&#128205; <a href="https://maps.google.com/?q=Otra+Barra+de+Café+Monterrey" target="_blank">Otra Barra de Café · Monterrey</a></b></p>
+            <p class="mes">Entrada $60</p>
+            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+          </div>
+        </div>
+      </div>
+      <div class="column filterDiv cine">
+        <div class="card">
+          <div class="fecha"><span class="dia">13</span> <span class="mes">dic 2026</span><br><span class="mes">Domingo · 7:30 p.m.</span></div>
+          <div class="info">
+            <span class="label cine">Cine</span>
+            <h3>Cineclub: directoras mexicanas</h3>
+            <p>Proyección y conversatorio abierto. Trae tu cojín.</p>
+            <p><b>&#128205; <a href="https://maps.google.com/?q=Sede+del+colectivo+Monterrey" target="_blank">Sede del colectivo · Monterrey</a></b></p>
+            <p class="mes">Entrada libre</p>
+            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+          </div>
+        </div>
+      </div>
+      <div class="column filterDiv expo">
+        <div class="card">
+          <div class="fecha"><span class="dia">20</span> <span class="mes">dic 2026</span><br><span class="mes">Domingo · 5:00 p.m.</span></div>
+          <div class="info">
+            <span class="label expo">Exposición</span>
+            <h3>Exposición colectiva: Duodécima edición</h3>
+            <p>Obra de artistas emergentes seleccionada por convocatoria.</p>
+            <p><b>&#128205; <a href="https://maps.google.com/?q=Por+anunciar+Monterrey" target="_blank">Por anunciar · Monterrey</a></b></p>
+            <p class="mes">Entrada libre</p>
+            <a href="#convocatorias" class="boton boton-chico">Detalles / Registro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Convocatorias (W3Schools How To: Tabs) -->
+<div class="seccion oscura" id="convocatorias">
+  <div class="contenedor">
+    <p class="etiqueta">Llamados abiertos</p>
+    <h2 class="titulo gotica">Convocatorias</h2>
+    <p class="intro">Nuestras propias convocatorias y un directorio curado de becas y fondos de la región para quienes van empezando.</p>
+    <div class="nota">2 pestañas: propias / externas. ¿Formulario con Google Forms?</div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'propias')" id="defaultOpen">Convocatorias de La Hermana</button>
+      <button class="tablinks" onclick="openTab(event, 'externas')">Red de convocatorias externas</button>
+    </div>
+    <div id="propias" class="tabcontent">
+      <div class="row">
+        <div class="column">
+          <div class="convocatoria">
+            <p class="etiqueta"><span class="abierta">&#9679; Abierta</span> · Cierra 10 de noviembre</p>
+            <h3>Lecturas para el micrófono abierto</h3>
+            <p>Poesía, prosa, canción o performance. Buscamos voces nuevas y voces que ya conocen el camino.</p>
+            <a href="docs/bases-microfono-abierto.pdf" class="boton boton-borde boton-chico" download>&#11015; Bases (PDF)</a>
+            <button class="boton boton-chico" onclick="abrirFormulario('Lecturas para el micrófono abierto')">Inscribirme</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="convocatoria">
+            <p class="etiqueta"><span class="abierta">&#9679; Abierta</span> · Cierra 20 de noviembre</p>
+            <h3>Bazar de arte y fanzines</h3>
+            <p>Mesa para ilustración, gráfica, fanzines, libros y objetos hechos a mano.</p>
+            <a href="docs/bases-bazar.pdf" class="boton boton-borde boton-chico" download>&#11015; Bases (PDF)</a>
+            <button class="boton boton-chico" onclick="abrirFormulario('Bazar de arte y fanzines')">Inscribirme</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="convocatoria">
+            <p class="etiqueta"><span class="abierta">&#9679; Abierta</span> · Cierra 1 de diciembre</p>
+            <h3>Exposición colectiva · Duodécima edición</h3>
+            <p>Pintura, fotografía, ilustración y técnica mixta de artistas emergentes de Monterrey.</p>
+            <a href="docs/bases-exposicion.pdf" class="boton boton-borde boton-chico" download>&#11015; Bases (PDF)</a>
+            <button class="boton boton-chico" onclick="abrirFormulario('Exposición colectiva · Duodécima edición')">Inscribirme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="externas" class="tabcontent">
+      <ul class="lista">
+        <li><a href="https://conarte.org.mx/" target="_blank"><span class="etiqueta org">CONARTE · Nuevo León</span><h3>Convocatorias del Consejo para la Cultura y las Artes de Nuevo León &#8599;</h3><span style="color:#cfc9bd">Becas, estímulos y premios estatales para creadores de todas las disciplinas.</span></a></li>
+        <li><a href="https://foncaenlinea.cultura.gob.mx/" target="_blank"><span class="etiqueta org">Secretaría de Cultura · SACPC</span><h3>Jóvenes Creadores y estímulos a la creación &#8599;</h3><span style="color:#cfc9bd">Programa federal de apoyos a la creación artística para personas de 18 a 34 años.</span></a></li>
+        <li><a href="https://conarte.org.mx/" target="_blank"><span class="etiqueta org">PECDA Nuevo León</span><h3>Programa de Estímulo a la Creación y al Desarrollo Artístico &#8599;</h3><span style="color:#cfc9bd">Estímulos para creadores con emisión anual en el estado.</span></a></li>
+        <li><a href="https://www.uanl.mx/" target="_blank"><span class="etiqueta org">UANL · Difusión cultural</span><h3>Convocatorias culturales de la UANL &#8599;</h3><span style="color:#cfc9bd">Premios literarios, ferias y espacios de exhibición abiertos a la comunidad.</span></a></li>
+      </ul>
+      <p class="etiqueta" style="color:#a8a297;margin-top:16px">Consulta siempre las bases en el sitio oficial de cada institución.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Puente editorial -->
+<!-- [EJEMPLO] Cambiar por textos reales de la revista -->
+<div class="seccion" id="revista">
+  <div class="contenedor">
+    <p class="etiqueta">El puente editorial · Lo último de la revista</p>
+    <h2 class="titulo gotica">Revista [Nombre]</h2>
+    <div class="nota">FALTA: nombre y link de la revista</div>
+    <p class="intro">Nuestro territorio editorial: creación literaria, reseñas y crítica.</p>
+    <div class="row">
+        <div class="column">
+          <div class="cita">
+            <p class="etiqueta">Poesía</p>
+            <blockquote>Nadie me dio permiso de hablar, así que tomé el micrófono como quien toma una piedra del río.</blockquote>
+            <h3>Piedra de río</h3>
+            <p style="color:#6b655c;font-size:14px">Nombre de la autora</p>
+            <a href="https://revista.example.com" target="_blank" class="boton boton-borde boton-chico">Leer en la Revista [Nombre] &#8599;</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="cita">
+            <p class="etiqueta">Ensayo</p>
+            <blockquote>La escena independiente de Monterrey no se mide en aforo, se mide en las sillas que alguien prestó.</blockquote>
+            <h3>Sillas prestadas: notas sobre la autogestión</h3>
+            <p style="color:#6b655c;font-size:14px">Nombre del autor</p>
+            <a href="https://revista.example.com" target="_blank" class="boton boton-borde boton-chico">Leer en la Revista [Nombre] &#8599;</a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="cita">
+            <p class="etiqueta">Reseña</p>
+            <blockquote>Un libro que se lee como se escucha una tocada en un patio: de pie, apretada, con el corazón en la garganta.</blockquote>
+            <h3>Reseña: título del libro</h3>
+            <p style="color:#6b655c;font-size:14px">Nombre de quien reseña</p>
+            <a href="https://revista.example.com" target="_blank" class="boton boton-borde boton-chico">Leer en la Revista [Nombre] &#8599;</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Archivo (W3Schools How To: Image Grid + Modal Images) -->
+<div class="seccion beige" id="archivo">
+  <div class="contenedor">
+    <p class="etiqueta">Archivo · memoria rápida</p>
+    <h2 class="titulo">Muro de <span class="gotica">recuerdos</span></h2>
+    <p class="intro">Micrófonos abiertos, tocadas, talleres y exposiciones desde 2018. No somos un proyecto pasajero.</p>
+    <div class="row cifras" style="margin-bottom:30px">
+      <div class="column"><b>2018</b>Primera edición</div>
+      <div class="column"><b>11</b>Ediciones del festival</div>
+      <div class="column"><b>18+</b>Sedes en el área metropolitana</div>
+    </div>
+    <div class="nota">Muro de fotos en B/N, a color al pasar el mouse</div>
+    <div class="galeria">
+      <div class="foto ancha"><b>FOTO</b><small>Micrófono abierto y Bazar de Arte · Casa Universitaria del Libro UANL · Julio 2023</small></div>
+      <div class="foto "><b>FOTO</b><small>Vol. IV · Ziggy Bar · Octubre 2019</small></div>
+      <div class="foto "><b>FOTO</b><small>Micrófono abierto · Camaleónico Café · Marzo 2024</small></div>
+      <div class="foto ancha"><b>FOTO</b><small>Séptima edición · Estudio Lizzard · Mayo 2022</small></div>
+      <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Casa Naranjos · Distrito Tec · Marzo 2020</small></div>
+      <div class="foto "><b>FOTO</b><small>ExpresArte Poesía · Facultad de Música UANL · Abril 2024</small></div>
+      <div class="foto ancha"><b>FOTO</b><small>Vol. I · Slam de poesía y prosa · Ámbar Galería Café · Mayo 2018</small></div>
+      <div class="foto "><b>FOTO</b><small>Décima edición · Vol. X · Taller Árido · Noviembre 2023</small></div>
+      <div class="foto "><b>FOTO</b><small>Noche de Poesía Juvenil · Parque Cerradas de Anáhuac, Escobedo · Marzo 2024</small></div>
+      <div class="foto ancha"><b>FOTO</b><small>Octava edición · Estudio Boox · Noviembre 2022</small></div>
+      <div class="foto "><b>FOTO</b><small>Micrófono abierto De Morra a Morra · Cataluna Café y Arte · Febrero 2024</small></div>
+      <div class="foto "><b>FOTO</b><small>Slam poetry × exposición de arte · Otra Barra de Café · Mayo 2024</small></div>
+    </div>
+    <p><a href="archivo.html" class="boton">Ver el archivo completo por años</a></p>
+  </div>
+</div>
+
+<!-- Sobre nosotras -->
+<div class="seccion" id="nosotras">
+  <div class="contenedor">
+    <div class="row">
+      <div class="column col-55">
+        <p class="etiqueta">Sobre nosotras</p>
+        <h2 class="titulo">Una hermana <span class="gotica">para todxs</span></h2>
+        <p class="intro">La Hermana de Shakespeare es un colectivo independiente que funge como plataforma para impulsar a lxs artistas emergentes en el Área Metropolitana de Monterrey, mediante proyectos culturales multidisciplinarios.</p>
+        <div class="caja"><h3>Misión</h3>Ofrecer una plataforma segura y dinámica para lxs artistas emergentes del Área Metropolitana de Monterrey a través de la gestión de proyectos multidisciplinarios.</div>
+        <div class="caja"><h3>Visión</h3>Enriquecer el acervo cultural de Nuevo León gestionando espacios seguros, para que en La Hermana de Shakespeare siempre seas escuchadx.</div>
+      </div>
+      <div class="column col-45 equipo">
+        <p class="etiqueta">El equipo</p>
+        <p><b>Paola Pavón</b><br><small>Directora general</small></p>
+        <p><b>Uriel Moreno</b><br><small>Relacionista público</small></p>
+        <p><b>Regina García</b><br><small>Coordinadora editorial</small></p>
+        <p><b>Daniela Martínez</b><br><small>Coordinadora de logística</small></p>
+        <p><b>Ricardo Hernández</b><br><small>Asistente de logística</small></p>
+        <p><b>Iris Martínez</b><br><small>Community manager</small></p>
+        <p><b>Patricia Guevara</b><br><small>Asistente editorial</small></p>
+        <div class="nota">FALTA: dirección de Sinarte + mapa</div>
+        <div class="caja oscura"><h3>Sede: Sinarte</h3>Dirección y horarios por confirmar.</div>
+      </div>
+    </div>
+    <h3 class="etiqueta" style="margin-top:30px">Línea del tiempo</h3>
+    <div class="linea">
+      <p><b>2018</b>Vol. I y II en Ámbar Galería Café</p>
+      <p><b>2019</b>Primer taller De Morra a Morra · Vol. III y IV</p>
+      <p><b>2020</b>Taller en el Tec · Quinta edición en línea</p>
+      <p><b>2021</b>Sexta edición en línea · HeForShe Tec</p>
+      <p><b>2022</b>Séptima y octava edición: el regreso presencial</p>
+      <p><b>2023</b>Bazar en Casa del Libro UANL · Décima edición</p>
+      <p><b>2024</b>Escobedo, Facultad de Música UANL · Vol. XI en Metapatio</p>
+    </div>
+  </div>
+</div>
+
+<!-- Prensa -->
+<div class="seccion beige" id="prensa">
+  <div class="contenedor">
+    <p class="etiqueta">Prensa</p>
+    <h2 class="titulo">Kit de <span class="gotica">prensa</span></h2>
+    <div class="row">
+      <div class="column col-50">
+        <div class="caja">
+          <h3>Para medios</h3>
+          <p>Portafolio 2024 con trayectoria, línea del tiempo, logotipos y fotografías.</p>
+          <div class="nota">Subir el kit de prensa en PDF</div>
+          <a href="#" class="boton">&#11015; Descargar kit de prensa</a>
+        </div>
+      </div>
+      <div class="column col-50">
+        <div class="caja">
+          <h3>Boletín</h3>
+          <p>Recibe la cartelera del mes y las convocatorias abiertas en tu correo.</p>
+          <form onsubmit="event.preventDefault(); this.innerHTML='<b>¡Gracias! Te escribiremos pronto.</b>';">
+            <input type="email" placeholder="tu@correo.com" required>
+            <button type="submit" class="boton">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana de inscripción (W3Schools How To: Modal + Contact Form) -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal('formModal')">&times;</span>
+    <h3 class="titulo" style="font-size:26px">Inscripción</h3>
+    <form id="formulario" onsubmit="enviarFormulario(event)">
+      <label for="campoConvocatoria">Convocatoria</label>
+      <input type="text" id="campoConvocatoria" name="convocatoria" readonly>
+      <label for="nombre">Nombre o nombre artístico</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" name="correo" required>
+      <label for="disciplina">Disciplina</label>
+      <select id="disciplina" name="disciplina">
+        <option>Poesía</option><option>Prosa</option><option>Música</option>
+        <option>Artes visuales</option><option>Performance</option><option>Otra</option>
+      </select>
+      <label for="propuesta">Cuéntanos sobre tu propuesta</label>
+      <textarea id="propuesta" name="propuesta" rows="4" required></textarea>
+      <button type="submit" class="boton degradado" style="color:#0e0d0c">Enviar inscripción</button>
+    </form>
+    <div id="gracias" style="display:none">
+      <p class="gotica" style="font-size:40px;margin:0">¡Gracias!</p>
+      <p>Recibimos tu inscripción. Te escribiremos al correo que nos dejaste.</p>
+    </div>
+  </div>
+</div>
+
+<a href="#cartelera" id="botonFlotante" class="degradado">&#127908; Próximo evento</a>
+
+<!-- Pie de página -->
+<div class="degradado" style="height:10px"></div>
+<footer class="footer">
+  <div class="contenedor">
+    <p class="manifiesto">Un espacio <span class="texto-degradado">seguro</span>, no separatista y de <span class="texto-degradado">puertas abiertas.</span></p>
+    <p style="max-width:650px;color:#b9b3a7">Aquí todas las voces son bienvenidas. Cero tolerancia a discursos de odio, acoso o propaganda partidista. Si algo te hace sentir insegurx en uno de nuestros eventos, búscanos: te vamos a escuchar.</p>
+    <hr style="border-color:#333;margin:40px 0">
+    <div class="row">
+      <div class="column">
+        <div class="logo-box chico">LOGO (blanco)</div>
+        <p style="color:#b9b3a7">Colectivo independiente para artistas emergentes del Área Metropolitana de Monterrey.</p>
+        <!-- [POR CONFIRMAR] enlaces de redes sociales -->
+        <a class="boton boton-borde boton-chico" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a class="boton boton-borde boton-chico" href="https://www.tiktok.com/" target="_blank">TikTok</a>
+        <a class="boton boton-borde boton-chico" href="https://www.facebook.com/" target="_blank">Facebook</a>
+      </div>
+      <div class="column">
+        <h4>Explora</h4>
+        <ul>
+          <li><a href="index.html#cartelera">Cartelera</a></li>
+          <li><a href="index.html#convocatorias">Convocatorias</a></li>
+          <li><a href="archivo.html">Archivo histórico</a></li>
+          <li><a href="https://revista.example.com" target="_blank">Revista [Nombre] &#8599;</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Contacto</h4>
+        <ul>
+          <!-- [POR CONFIRMAR] correo del colectivo -->
+          <li><a href="mailto:contacto@lahermanadeshakespeare.mx">contacto@lahermanadeshakespeare.mx</a></li>
+          <li><a href="#">Kit de prensa (PDF)</a></li>
+          <li><a href="aviso-legal.html">Aviso legal y privacidad</a></li>
+          <li>Monterrey, Nuevo León</li>
+        </ul>
+      </div>
+    </div>
+    <p style="color:#8f897e;font-size:13px">© 2026 La Hermana de Shakespeare · Colectivo independiente</p>
+  </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

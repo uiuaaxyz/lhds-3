@@ -1,0 +1,1166 @@
+/* =====================================================
+   La Hermana de Shakespeare - estilos (VERSIÓN BORRADOR)
+   Misma estructura que lhds-2; al final del archivo está
+   la capa de "boceto" que lo hace ver como borrador.
+   Basado en ejemplos de W3Schools (CSS Tutorial y "How To").
+   Cada bloque dice de qué ejemplo viene.
+   ===================================================== */
+
+/* ---------- Básicos (W3Schools: CSS Box Sizing, CSS Fonts) ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Patrick Hand", "Comic Sans MS", cursive;
+  font-size: 17px;
+  line-height: 1.5;
+  background-color: #fbfaf7;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.seccion {
+  padding: 80px 0;
+}
+
+.oscura {
+  background-color: #333;
+  color: #fbfaf7;
+}
+
+.beige {
+  background-color: #f0efeb;
+}
+
+/* Tipografías */
+.gotica {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.etiqueta {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+
+h2.titulo {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 60px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+
+.intro {
+  font-size: 19px;
+  max-width: 650px;
+  margin-bottom: 32px;
+}
+
+/* Degradado de la marca (W3Schools: CSS Gradients) */
+.degradado {
+  background-image: repeating-linear-gradient(45deg, #ddd 0 6px, #f4f4f4 6px 12px);
+}
+
+.texto-degradado {
+  background-image: repeating-linear-gradient(45deg, #ddd 0 6px, #f4f4f4 6px 12px);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Botones (W3Schools: CSS Buttons) ---------- */
+.boton {
+  display: inline-block;
+  background-color: #333;
+  color: #fbfaf7;
+  border: 2px solid #333;
+  padding: 14px 22px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 4px 4px 4px 0;
+}
+
+.boton:hover {
+  background-color: #999;
+  border-color: #999;
+  color: white;
+}
+
+.boton-claro {
+  background-color: #fbfaf7;
+  color: #333;
+  border-color: #fbfaf7;
+}
+
+.boton-borde {
+  background-color: transparent;
+  color: inherit;
+  border-color: currentColor;
+}
+
+.boton-chico {
+  padding: 8px 14px;
+  font-size: 12px;
+}
+
+/* ---------- Menú (W3Schools How To: Responsive Top Navigation + Sticky) ---------- */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fbfaf7;
+  border-bottom: 2px solid #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  padding: 24px 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: #333;
+  color: #fbfaf7;
+}
+
+.topnav a.logo {
+  padding: 10px 16px 10px 0;
+}
+
+.topnav a.logo:hover {
+  background-color: transparent;
+}
+
+.topnav a.logo img {
+  height: 50px;
+  display: block;
+}
+
+.topnav .derecha {
+  float: right;
+}
+
+.topnav a.cta {
+  margin: 12px 0 12px 10px;
+  padding: 12px 16px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 2px solid #333;
+}
+
+.topnav a.icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a:not(.logo) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 16px;
+    top: 0;
+  }
+  .topnav.responsive a.cta {
+    margin: 10px 0 16px 0;
+  }
+  .topnav.responsive .derecha {
+    float: none;
+  }
+}
+
+/* ---------- Portada (W3Schools How To: Hero Image) ---------- */
+.hero-image {
+  background-image:
+    linear-gradient(rgba(122, 44, 240, 0.75), rgba(236, 31, 140, 0.55), rgba(14, 13, 12, 0.95)),
+    url("../img/archivo/2023-07-casa-del-libro-05.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 90px 0 60px 0;
+}
+
+.hero-image .logo-grande {
+  width: 600px;
+  max-width: 85%;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.hero-image h1 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 50px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  max-width: 750px;
+  margin: 0 0 16px 0;
+}
+
+.hero-image h1 span {
+  background-color: #ddd;
+  color: #333;
+  padding: 0 6px;
+}
+
+.hero-image p {
+  font-size: 19px;
+  max-width: 560px;
+}
+
+/* Cinta en movimiento (W3Schools: CSS Animations) */
+.cinta {
+  background-color: #ddd;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 12px 0;
+}
+
+.cinta span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: mover 30s linear infinite;
+}
+
+@keyframes mover {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* ---------- Filtros (W3Schools How To: Filter Elements) ---------- */
+.filtros {
+  margin-bottom: 24px;
+}
+
+.btn-filtro {
+  border: 2px solid #333;
+  background-color: transparent;
+  padding: 8px 14px;
+  margin: 0 4px 8px 0;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-filtro:hover,
+.btn-filtro.active {
+  background-color: #333;
+  color: #fbfaf7;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* ---------- Tarjetas de eventos (W3Schools How To: Responsive Column Cards) ---------- */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #333;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 6px 6px 0 #333;
+}
+
+.card .fecha {
+  border-bottom: 2px solid #333;
+  padding: 14px 18px;
+}
+
+.card .dia {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 46px;
+  line-height: 1;
+}
+
+.card .mes {
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.card .info {
+  padding: 16px 18px;
+}
+
+.card h3 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.1;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* Etiquetas de disciplina (W3Schools How To: Labels) */
+.label {
+  display: inline-block;
+  padding: 3px 8px;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #333;
+}
+
+.label.slam { background-color: #999; color: white; }
+.label.musica { background-color: #ddd; }
+.label.taller { background-color: #777; color: white; }
+.label.cine { background-color: #333; color: white; }
+.label.expo { background-color: #bbb; }
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  h2.titulo {
+    font-size: 40px;
+  }
+  .hero-image h1 {
+    font-size: 32px;
+  }
+  .seccion {
+    padding: 56px 0;
+  }
+}
+
+/* ---------- Pestañas (W3Schools How To: Tabs) ---------- */
+.tab {
+  overflow: hidden;
+  border-bottom: 2px solid #fbfaf7;
+}
+
+.tab button {
+  float: left;
+  background-color: inherit;
+  color: #fbfaf7;
+  border: 2px solid #fbfaf7;
+  border-bottom: none;
+  margin-right: 6px;
+  padding: 14px 18px;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tab button:hover,
+.tab button.active {
+  background-color: #fbfaf7;
+  color: #333;
+}
+
+.tabcontent {
+  display: none;
+  padding: 24px 0;
+}
+
+.convocatoria {
+  background-color: #fbfaf7;
+  color: #333;
+  border-top: 6px solid #999;
+  padding: 20px;
+  height: 100%;
+}
+
+.convocatoria h3 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.abierta {
+  color: #555;
+  font-weight: bold;
+}
+
+/* Lista de convocatorias externas (W3Schools How To: List Group) */
+ul.lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.lista li {
+  border-bottom: 1px solid #555;
+  padding: 18px 0;
+}
+
+ul.lista li a {
+  text-decoration: none;
+}
+
+ul.lista li a:hover h3 {
+  color: #ddd;
+}
+
+ul.lista h3 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 4px 0;
+}
+
+ul.lista .org {
+  color: #ddd;
+}
+
+/* ---------- Ventana modal (W3Schools How To: Modal) ---------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fbfaf7;
+  margin: auto;
+  padding: 24px;
+  border: 2px solid #333;
+  width: 90%;
+  max-width: 540px;
+  box-shadow: 8px 8px 0 #999;
+}
+
+.close {
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #999;
+}
+
+/* Formulario (W3Schools How To: Contact Form) */
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #333;
+  margin: 6px 0 14px 0;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: white;
+}
+
+label {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* ---------- Revista (W3Schools How To: Blockquote / Testimonials) ---------- */
+.cita {
+  background-color: white;
+  border: 2px solid #333;
+  padding: 24px;
+  height: 100%;
+}
+
+.cita blockquote {
+  font-family: "Patrick Hand", "Comic Sans MS", cursive;
+  font-style: italic;
+  font-size: 22px;
+  margin: 12px 0 18px 0;
+}
+
+.cita blockquote:before {
+  content: "\201C";
+  font-size: 60px;
+  line-height: 0.1;
+  vertical-align: -0.4em;
+  margin-right: 4px;
+  color: #999;
+}
+
+.cita h3 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0;
+}
+
+/* ---------- Galería (W3Schools How To: Image Grid + Modal Images) ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+  filter: none;
+}
+
+.galeria .ancha {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 700px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#imgModal {
+  text-align: center;
+}
+
+#imgModal img {
+  max-width: 92%;
+  max-height: 80vh;
+}
+
+#imgModal .caption {
+  color: white;
+  padding: 12px;
+  font-family: "Courier New", monospace;
+}
+
+#imgModal .close {
+  color: white;
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  font-size: 44px;
+}
+
+/* Cifras */
+.cifras .column {
+  border-left: 2px solid #333;
+}
+
+.cifras b {
+  display: block;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 48px;
+}
+
+/* ---------- Sobre nosotras ---------- */
+.caja {
+  border: 2px solid #333;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.caja h3 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+}
+
+.equipo p {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.equipo small {
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* Línea del tiempo (W3Schools How To: Timeline, versión simple) */
+.linea {
+  border-left: 4px solid #999;
+  padding-left: 20px;
+}
+
+.linea p {
+  margin: 0 0 14px 0;
+}
+
+.linea b {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* ---------- Pie de página ---------- */
+.footer {
+  background-color: #333;
+  color: #fbfaf7;
+  padding: 60px 0 90px 0;
+}
+
+.footer .manifiesto {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 44px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin: 0 0 16px 0;
+}
+
+.footer h4 {
+  color: #ddd;
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .manifiesto {
+    font-size: 28px;
+  }
+}
+
+/* Botón flotante (W3Schools How To: Scroll To Top Button) */
+#botonFlotante {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 15;
+  border: 2px solid #333;
+  color: #333;
+  padding: 14px 18px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 #333;
+}
+
+/* ---------- Página del archivo ---------- */
+.anios {
+  position: sticky;
+  top: 72px;
+  z-index: 5;
+  background-color: #fbfaf7;
+  border-bottom: 2px solid #333;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.anios a {
+  display: inline-block;
+  padding: 12px 18px;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 20px;
+  text-decoration: none;
+  border-right: 2px solid #333;
+}
+
+.anios a:hover {
+  background-color: #333;
+  color: #fbfaf7;
+}
+
+.anio {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-size: 110px;
+  line-height: 1;
+  margin: 50px 0 10px 0;
+}
+
+.evento-archivo {
+  border-top: 1px solid #ccc;
+  padding: 24px 0;
+}
+
+.evento-archivo h3 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: uppercase;
+  margin: 4px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .anio {
+    font-size: 70px;
+  }
+  .anios {
+    top: 70px;
+  }
+}
+
+/* Columnas de distintos anchos (W3Schools How To: Two Column Layout) */
+.col-55 { width: 55%; }
+.col-45 { width: 45%; }
+.col-50 { width: 50%; }
+
+@media screen and (max-width: 900px) {
+  .col-55, .col-45, .col-50 { width: 100%; }
+}
+
+/* Columnas de la misma altura (W3Schools How To: Equal Height Columns con Flexbox) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  float: none;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.filterDiv.show {
+  display: block;
+}
+
+/* Títulos en letra gótica */
+.titulo.gotica,
+h2.titulo.gotica {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 72px;
+}
+
+.caja.oscura {
+  background-color: #333;
+  color: #fbfaf7;
+}
+
+@media screen and (max-width: 600px) {
+  .titulo.gotica,
+  h2.titulo.gotica {
+    font-size: 52px;
+  }
+}
+
+
+/* =====================================================
+   CAPA DE BORRADOR (boceto / wireframe)
+   ===================================================== */
+
+/* Papel cuadriculado (W3Schools: CSS Multiple Backgrounds) */
+body {
+  background-color: #fbfaf7;
+  background-image:
+    linear-gradient(#e6eef5 1px, transparent 1px),
+    linear-gradient(90deg, #e6eef5 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #333;
+  font-size: 19px;
+}
+
+.oscura,
+.beige,
+.footer {
+  background-color: rgba(240, 240, 236, 0.85);
+  color: #333;
+  border-top: 2px dashed #999;
+}
+
+.footer .manifiesto,
+.footer h4,
+ul.lista .org,
+.hero-image,
+.hero-image h1,
+.tab button {
+  color: #333;
+}
+
+.texto-degradado {
+  background-image: none;
+  color: #333;
+  text-decoration: underline wavy #999;
+}
+
+/* Bordes "dibujados a mano" (W3Schools: CSS Rounded Corners) */
+.card,
+.caja,
+.cita,
+.convocatoria,
+.boton,
+.btn-filtro,
+.tab button,
+.modal-content,
+input[type=text],
+input[type=email],
+select,
+textarea,
+.label,
+.foto,
+.logo-box {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.card,
+.caja,
+.cita,
+.convocatoria {
+  border: 2px solid #555;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 0 #bbb;
+}
+
+.convocatoria {
+  border-top: 2px solid #555;
+}
+
+.caja.oscura {
+  background-color: #eee;
+  color: #333;
+  border-style: dashed;
+}
+
+.boton,
+.boton:hover,
+.btn-filtro.active,
+.btn-filtro:hover,
+.tab button.active,
+.tab button:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #555;
+}
+
+.boton:hover,
+.btn-filtro:hover {
+  background-color: #eee;
+}
+
+.btn-filtro.active,
+.tab button.active {
+  background-color: #ddd;
+}
+
+.boton-claro,
+.boton-borde {
+  background-color: transparent;
+}
+
+.label,
+.label.slam,
+.label.musica,
+.label.taller,
+.label.cine,
+.label.expo {
+  background-color: #fff;
+  color: #333;
+  border: 1.5px dashed #555;
+}
+
+h2.titulo,
+.titulo.gotica,
+h2.titulo.gotica {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.gotica {
+  font-family: "Caveat", cursive;
+  font-size: 1.15em;
+}
+
+/* Portada */
+.hero-image {
+  background-image: none;
+  background-color: transparent;
+  border-bottom: 2px dashed #999;
+}
+
+.hero-image h1 {
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-transform: none;
+}
+
+.hero-image h1 span {
+  background-color: transparent;
+  color: #333;
+  box-shadow: inset 0 -0.35em 0 #e5e5e5;
+}
+
+.hero-image p,
+.hero-image .etiqueta {
+  color: #555 !important;
+}
+
+.cinta {
+  background-color: #f2f2f2;
+  border-style: dashed;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+}
+
+.cinta span {
+  animation: none;
+  padding-left: 16px;
+}
+
+.topnav {
+  background-color: #fbfaf7;
+  border-bottom: 2px dashed #555;
+}
+
+.topnav a:hover {
+  background-color: #eee;
+  color: #333;
+}
+
+.topnav a.cta {
+  border-style: dashed;
+}
+
+/* Cajas de foto vacías (wireframe) */
+.foto {
+  position: relative;
+  border: 2px solid #999;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1px), #bbb, transparent calc(50% + 1px)),
+    linear-gradient(to top left, transparent calc(50% - 1px), #bbb, transparent calc(50% + 1px)),
+    #f4f4f2;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.foto b {
+  background-color: #f4f4f2;
+  padding: 2px 8px;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+}
+
+.foto small {
+  background-color: #f4f4f2;
+  padding: 2px 6px;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #666;
+}
+
+.foto.ancha {
+  grid-column: span 2;
+}
+
+.foto.mas {
+  background: #fff;
+  border-style: dashed;
+}
+
+/* Logo provisional */
+.logo-box {
+  border: 2px dashed #555;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  text-align: center;
+  color: #555;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.logo-box.nav {
+  width: 120px;
+  height: 48px;
+  line-height: 44px;
+}
+
+.logo-box.grande {
+  width: 520px;
+  max-width: 100%;
+  padding: 40px 10px;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.logo-box.grande span {
+  font-family: "Caveat", cursive;
+  font-size: 38px;
+}
+
+.logo-box.chico {
+  width: 220px;
+  padding: 26px 10px;
+  margin-bottom: 10px;
+}
+
+/* Notas al margen (W3Schools How To: Notes / Callout) */
+.nota {
+  display: inline-block;
+  font-family: "Caveat", cursive;
+  font-size: 22px;
+  color: #c0392b;
+  background-color: #fff8b3;
+  padding: 4px 12px;
+  margin: 0 0 14px 0;
+  transform: rotate(-1.5deg);
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nota:before {
+  content: "\270E  ";
+}
+
+/* Sello de borrador */
+.sello-borrador {
+  background-color: #fff8b3;
+  color: #c0392b;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 6px;
+  border-bottom: 2px dashed #c0392b;
+}
+
+#botonFlotante {
+  background: #fff;
+  border-style: dashed;
+  box-shadow: 3px 3px 0 #bbb;
+}
+
+.anio {
+  color: #333;
+}
+
+.anios {
+  background-color: #fbfaf7;
+}
+
+.linea {
+  border-left: 3px dashed #999;
+}
+
+ul.lista li {
+  border-bottom: 1px dashed #999;
+}
+
+ul.lista li a span {
+  color: #555 !important;
+}
+
+.footer p,
+.footer .about {
+  color: #555 !important;
+}
+
+.cifras .column {
+  border-left: 2px dashed #999;
+}
+
+hr {
+  border: 0;
+  border-top: 2px dashed #999 !important;
+}
+
+@media screen and (max-width: 700px) {
+  .foto {
+    height: 140px;
+  }
+}
+
+.tabcontent .etiqueta { color: #777 !important; }
