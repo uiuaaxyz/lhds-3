@@ -2,7 +2,7 @@
 
 Esqueleto del sitio: la **estructura** de todas las secciones de la versión final ([lhds-2](https://github.com/uiuaaxyz/lhds-2)),
 con los **colores** y tipografías de la marca y texto **lorem ipsum** en lugar del contenido real.
-Las fotos están reemplazadas por bloques de color. Sirve para entregar como avance de cómo va a quedar.
+Cada sección lleva su nombre e indicaciones de lo que va ahí ("aquí va…", "aquí van fotos de…"); las fotos son bloques de color. Sirve para entregar como avance de cómo va a quedar.
 
 Para verlo, abre `index.html` en el navegador.
 
